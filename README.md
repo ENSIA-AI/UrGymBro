@@ -82,4 +82,4 @@
 
 Replace /public/assets/IMAGES/Site_maps.png your site maps image path.
 
-![Site maps](/public/assets/IMAGES/Site_maps.png?raw=true "Site maps")
+Site map : https://drive.google.com/drive/folders/1fGmcU9gEmFxoQRoNWTz-La3AZQrhTxFb?usp=drive_link

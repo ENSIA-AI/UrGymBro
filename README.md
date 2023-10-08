@@ -79,7 +79,4 @@
 # 5. How often will people visit the website? two to three times a week to keep up with their diet and in case they need certain gym equipment.
 
 # 6. Site maps:
-
-Replace /public/assets/IMAGES/Site_maps.png your site maps image path.
-
 Site map : https://drive.google.com/drive/folders/1fGmcU9gEmFxoQRoNWTz-La3AZQrhTxFb?usp=drive_link

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sign up now</title>
+    <link rel="stylesheet" href="IHEB-sign_up_page_1.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="navbar.js"></script>
+</head>
+
+
+
+
+
+<body onload="weightcounter();heightcounter()">
+    <div class="Navbar">
+        <div class="logo"> <img src="images/Logo.svg" width="100px" style="margin-top: 10px; margin-right:20px ;">
+        </div>
+        <button class="menu-button">&#9776;</button>
+        <div class="notlogo" id="menuOptions">
+            <div class="Basics homee"><a href="landingpage.html" class="Basicsah"><b>HOME</b></a></div>
+            <div class="Basics"><a href="maps.html" class="Basicsam"><b>MAPS</b></a></div>
+            <div class="Basics productss"><a href="products.html" class="Basicsap"><b>PRODUCTS</b></a></div>
+            <div class="Basics foodss"><a href="Food1.html" class="Basicsaf"><b>FOOD</b></a></div>
+            <div class="Basics"><a href="aboutus.html" class="Basicsaa"><b>ABOUT</b></a></div>
+            <div class="login"><a href="login.html" class="logina"><b>LOG IN</b></a></div>
+        </div>
+    </div>
+
+    <div class="sp_div2">
+        <div class="join_us">
+            <h1>JOIN US NOW</h1>
+        </div>
+        <form action="#" method="post">
+            <input type="text" name="username" id="username" placeholder="Username" class="sign_up_input" required>
+            
+            <input type="email" name="user_email" id="user_email" placeholder="Email Adress" class="sign_up_input"
+                required>
+            <input type="password" name="password" id="password" placeholder="Password" class="sign_up_input" required>
+            
+            <input type="password" name="password_conf" id="password_conf" placeholder="Confirmm Your Password"
+                class="sign_up_input" required>
+            
+            <select name="user_gender" id="user_gender" class="sign_up_input" required>
+                <option value="" id="place_g" disabled selected>Gender</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
+            
+            <input type="text" name="b_date" id="b_date" placeholder="MM/DD/YYYY" onfocus="(this.type='date')"
+                class="sign_up_input" required>
+            
+            <select name="user_weight" id="user_weight" class="sign_up_input" required>
+
+                <option value="" id="place_w" disabled selected>Weight</option>
+                <script>
+                    function weightcounter() {
+                        var startweight = 40;
+                        var endweight = 250;
+                        for (var i = startweight; i <= endweight; i++) {
+                            node = document.createElement("Option");
+                            textnode = document.createTextNode(i);
+                            node.appendChild(textnode);
+                            textnode = document.createTextNode("Kg");
+                            node.appendChild(textnode);
+                            document.getElementById("user_weight").appendChild(node);
+                        }
+                    }
+                </script>
+            </select>
+
+            
+            <select name="user_height" id="user_height" class="sign_up_input" required>
+                <option value="" id="place_h" disabled selected>Height</option>
+                <script>
+                    function heightcounter() {
+                        var startheight = 140;
+                        var endheight = 260;
+                        for (var j = startheight; j <= endheight; j++) {
+                            node = document.createElement("Option");
+                            textnode = document.createTextNode(j + "cm");
+                            node.appendChild(textnode);
+                            document.getElementById("user_height").appendChild(node);
+                        }
+                    }
+                </script>
+
+
+            </select>
+            <div id="redirect">If you already have an account: <a id="redirect_link" href="login.html">click here </a>
+            </div>
+    </div>
+    <br>
+    <br>
+    <div class="button1">
+        <input type="button" name="sign_up_button" id="sign_up_button" value="Create!" required>
+    </div>
+    </form>
+
+</body>
+
+</html>

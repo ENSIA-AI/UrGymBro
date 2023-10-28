@@ -1,0 +1,54 @@
+
+footer{
+    padding-top: 40px;
+    background-color: #1B1A1A;
+    color: #CBCBCB;
+    position:absolute;
+    margin-top: 1200px;
+    width: 100%;
+
+}
+
+.container3{
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footerplogo{
+ margin-left: 30px;
+}
+
+.description{
+    font-family: Montserrat;
+    margin-top: 35px;
+}
+
+
+.FollowIcons{
+    font-family: Montserrat;
+    margin-top: 10px;
+    
+    
+}
+
+.Icons{
+    margin-left: 0px;
+    margin-top: 30px;
+    display: flex;
+}
+
+.Form{
+    display:flex;
+    flex-direction: column;
+    margin-left: 0px;
+
+}
+.emal{
+    font-family: Montserrat;
+}
+.follow{
+    display: flex;
+    flex-direction: column;
+}
+

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Our Products</title>
+    <link rel="stylesheet" href="products.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <script src="navbar.js"></script>
+    <script src="IHEB_products_page.js"></script>
+  </head>
+
+  <body onload="update_display(array[0],1)">
+    <div class="navbar_container">
+      <div class="Navbar">
+        <div class="logo">
+          <img
+            src="images/Logo.svg"
+            width="100px"
+            style="margin-top: 10px; margin-right: 20px"
+          />
+        </div>
+        <button class="menu-button">&#9776;</button>
+        <!-- Hamburger menu icon-->
+        <div class="notlogo" id="menuOptions">
+          <div class="Basics"><a href="landingpage.html" class="Basicsah"><b>HOME</b></a></div>
+          <div class="Basics"><a href="maps.html" class="Basicsam"><b>MAPS</b></a></div>
+          <div class="Basics"><a href="products.html" class="Basicsap"><b>PRODUCTS</b></a></div>
+          <div class="Basics"><a href="Food1.html" class="Basicsaf"><b>FOOD</b></a></div>
+          <div class="Basics"><a href="aboutus.html" class="Basicsaa"><b>ABOUT</b></a></div>
+          <div class="login"><a href="login.html" class="logina"><b>LOG IN</b></a></div>
+       
+        </div>
+      </div>
+    </div> 
+    <div class="top_div">
+      <div class="header">OUR PRODUCTS:</div>
+
+      <div class="filters">
+        <div class="filter_text">Filters:</div>
+        <div class="type">
+          <label for="type_filters">Type of product:</label>
+          <select
+            name="type_filters"
+            id="type_filters"
+            onchange="restore_display();update_display(array[value],1);hide_display(array[value],1)"
+          >
+            <option value="0" selected="true">All</option>
+            <option value="2">Gym Equipment</option>
+            <option value="4">Suplements</option>
+          </select>
+        </div>
+        <div class="price">
+          <label for="price_filters">Price of the product:</label>
+          <select
+            name="price_filters"
+            id="price_filters"
+            onchange="restore_display();update_display(array[parseInt((document.getElementById('type_filters').value))+1][value],1);hide_display(array[parseInt(document.getElementById('type_filters').value)+1][value],1)"
+          >
+            <option value="0" selected="true">All</option>
+            <option value="1">From 0 to 5000 DA</option>
+            <option value="2">From 5001 to 10000 DA</option>
+            <option value="3">From 10001 to 15000 DA</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+    <div class="products">
+      <div class="product" id="product1">
+        <img src="téléchargement1.jpg" id="product1_img" class="product_img" />
+        <div class="text">
+          <div id="product1_name" class="product_name">IHEB</div>
+          <div id="product1_price" class="product_price">price: 5000 DA</div>
+          <div class="product_description" id="product1_description">
+            "Sed ut perspiciatis unde
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart1"
+            value="add"
+          />
+        </div>
+      </div>
+      <div class="product" id="product2">
+        <img src="téléchargement1.jpg" id="product2_img" class="product_img" />
+        <div class="text">
+          <div id="product2_name" class="product_name">IHEB</div>
+          <div class="product_price" id="product2_price">price: 5000 DA</div>
+          <div class="product_description" id="product2_description">
+            "Sed ut perspiciatis unde
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart2"
+            value="add"
+          />
+        </div>
+      </div>
+      <div class="product" id="product3">
+        <img src="téléchargement1.jpg" id="product3_img" class="product_img" />
+        <div class="text">
+          <div id="product3_name" class="product_name">IHEB</div>
+          <div class="product_price" id="product3_price">price: 5000 DA</div>
+          <div class="product_description" id="product3_description">
+            "Sed ut perspiciatis unde
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart3"
+            value="add"
+          />
+        </div>
+      </div>
+      <div class="product" id="product4">
+        <img src="téléchargement1.jpg" id="product4_img" class="product_img" />
+        <div class="text">
+          <div id="product4_name" class="product_name">IHEB</div>
+          <div class="product_price" id="product4_price">price: 5000 DA</div>
+          <div class="product_description" id="product4_description">
+            "Sed ut perspiciatis unde
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart4"
+            value="add"
+          />
+        </div>
+      </div>
+      <div class="product" id="product5">
+        <img src="téléchargement1.jpg" id="product5_img" class="product_img" />
+        <div class="text">
+          <div id="product5_name" class="product_name">IHEB</div>
+          <div class="product_price" id="product5_price">price: 5000 DA</div>
+          <div class="product_description" id="product5_description">
+            "Sed ut perspiciatis unde
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart5"
+            value="add"
+          />
+        </div>
+      </div>
+      <div class="product" id="product6">
+        <img src="téléchargement1.jpg" id="product6_img" class="product_img" />
+        <div class="text">
+          <div id="product6_name" class="product_name">IHEB</div>
+          <div class="product_price" id="product6_price">price: 5000 DA</div>
+          <div class="product_description" id="product6_description">
+            "Sed ut perspiciatis unde
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart6"
+            value="add"
+          />
+        </div>
+      </div>
+      <div class="product" id="product7">
+        <img src="téléchargement1.jpg" id="product7_img" class="product_img" />
+        <div class="text">
+          <div id="product7_name" class="product_name">IHEB</div>
+          <div class="product_price" id="product7_price">price: 5000 DA</div>
+          <div class="product_description" id="product7_description">
+            Sed ut perspiciatis unde
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart7"
+            value="add"
+          />
+        </div>
+      </div>
+
+      <div class="product" id="product8">
+        <img src="téléchargement1.jpg" id="product8_img" class="product_img" />
+        <div class="text">
+          <div id="product8_name" class="product_name">IHEB</div>
+          <div class="product_price" id="product8_price">price: 5000 DA</div>
+          <div class="product_description" id="product8_description">
+            "Sed ut perspiciatis unde
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart8"
+            value="add"
+          />
+        </div>
+      </div>
+      <div class="product" id="product9">
+        <img src="téléchargement1.jpg" id="product9_img" class="product_img" />
+        <div class="text">
+          <div id="product9_name" class="product_name">IHEB</div>
+
+          <div class="product_price" id="product9_price">price: 5000 DA</div>
+          <div class="product_description" id="product9_description">
+            "Sed ut perspiciatis unde omnis iste n
+          </div>
+          <input
+            type="button"
+            class="add_to_kart"
+            id="add_to_kart9"
+            value="add"
+          />
+        </div>
+      </div>
+    </div>
+
+    <div class="product_navigation">
+      <input
+        type="button"
+        class="nav"
+        id="nav1"
+        value="1"
+        onclick=" window. scrollTo(0, 0) ;restore_display();update_display(array[parseInt(document.getElementById('type_filters').value)+1][document.getElementById('price_filters').value],1);hide_display(array[parseInt(document.getElementById('type_filters').value)+1][document.getElementById('price_filters').value],1)"
+      />
+      <input
+        type="button"
+        class="nav"
+        id="nav2"
+        value="2"
+        onclick=" window. scrollTo(0, 0) ;restore_display();update_display(array[parseInt(document.getElementById('type_filters').value)+1][document.getElementById('price_filters').value],2);hide_display(array[parseInt(document.getElementById('type_filters').value)+1][document.getElementById('price_filters').value],2)"
+      />
+      <input
+        type="button"
+        class="nav"
+        id="nav3"
+        value="3"
+        onclick=" window. scrollTo(0, 0) ;restore_display();update_display(array[parseInt(document.getElementById('type_filters').value)+1][document.getElementById('price_filters').value],3);hide_display(array[parseInt(document.getElementById('type_filters').value)+1][document.getElementById('price_filters').value],3)"
+      />
+    </div>
+    <footer>
+      <div class="container3">
+       <div class="footerplogo"><div class= "footerlogo"> <image src="images/footerlogo.svg" alt="UR" width="190" height="130" > </div>
+       <div class="description">  <p>A website dedicated to helping you<br> become your best form while providing<br> you with the right diet, products<br> and even finding the right<br> gym for you! </p></div></div>
+       <div class="follow"><div class="FollowIcons"> <p>FOLLOW US</p></div>
+       <div class="Icons"> <image src="images/🦆 icon _facebook_.svg" alt="Facebook" width="60" height="50"/>  <image src="images/🦆 icon _instagram_.svg" alt="Instagram" width="60" height="50"/></div>
+   </div>
+   <form class="Form">
+         <label for = "emal"> <div class="emal">Contact us</div></label>
+         <input type="email" id="email" name="email" value="Email" style="width: 70%;"/>
+         <input type="textarea" id="textarea" name="textarea" value="Message" maxlength="20" style="width: 70%;"/>
+       </form>
+     </div></footer>
+  </body>
+</html>

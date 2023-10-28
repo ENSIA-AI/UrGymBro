@@ -1,0 +1,1265 @@
+@font-face {
+  font-family:"Out Of My League";
+  src: url("OutOfMyLeague.ttf") format("truetype");
+}
+@media (min-width:1950px) {
+
+   
+    .Navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #cbcbcb;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background: #cbcbcb;
+        box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
+        border-radius: 100px;
+      
+      }
+      
+      .Basics {
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #cbcbcb;
+        color: #1b1a1a;
+        /*border: 4px #1b1a1a solid;
+        border-radius: 100px;*/
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      
+      .login {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 100px;
+        background-color: #e00000;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .notlogo {
+        display: flex;
+        align-items: center;
+      }
+      
+      .Basics,
+      .login {
+        display: inline-block; /* Display them side by side */
+        margin-left: 10px; /* Add spacing between the elements */
+      }
+      
+      .logo {
+        flex: 1; /* Allow the logo to take up available space on the left */
+      }
+      
+      /* Your existing styles for the desktop view go here */
+      
+      /* Hamburger menu icon styling */
+      .menu-button {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      
+      /* Media query for screens under 1000px */
+      @media (max-width: 800px) {
+        .notlogo {
+          display: none; /* Hide the regular menu items */
+        }
+      
+        .menu-button {
+          display: block; /* Show the hamburger menu icon */
+        }
+      
+        /* Additional styles for the dropdown menu */
+        .notlogo.active {
+          display: block;
+          background: #cbcbcb;
+          position: absolute;
+          top: 64px;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+        }
+      
+        .Basics,
+        .login {
+          display: block; /* Display the menu items as a list */
+          margin: 5px 0;
+        }
+      
+        .container {
+            width: 100%; /* Set the width to 100% to make it adapt to the screen width */
+            padding: 8px 16px; /* Adjust padding for smaller screens */
+        }
+      
+      }
+      .Basicsah{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsam{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsaf{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsap{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsaa{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .logina{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+
+
+
+    body {
+        background: #1B1A1A;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .sp_div2 {
+        position: relative;
+
+    }
+
+    .join_us {
+        width: 80rem;
+        height: 10rem;
+        color: var(--Orange-red, #E00000);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Out Of My League;
+        font-size: 20rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        left: 30vmax;
+        top: 5rem;
+    }
+
+    .sign_up_input {
+        position: relative;
+        top: 10rem;
+        left: 30vw;
+        font-size: 3rem;
+        padding-left: 3rem;
+        display: flex;
+        width: 60rem;
+        height: 5rem;
+        align-items: center;
+        row-gap: 10rem;
+        margin-top: 4rem;
+        border-radius: 100px;
+        background: var(--silver, #CBCBCB);
+    }
+
+    #user_weight:onclick {
+        font-size: 1rem;
+
+
+    }
+
+    #sign_up_button {
+        position: relative;
+        width: 28.5vmin;
+        height: 9.5vmin;
+        padding: 12px 36px;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40rem;
+        border-radius: 100px;
+        left: 115rem;
+        top: 25rem;
+        color: #CBCBCB;
+        background-color: #E00000;
+        font-size: 4.5vmin;
+    }
+
+
+    #redirect {
+        width: 60rem;
+        position: relative;
+        top: 15rem;
+        left: 30vw;
+        font-size: 3rem;
+        color: #CBCBCB;
+    }
+
+    #redirect_link {
+        text-decoration: none;
+        color: #CBCBCB;
+    }
+
+    #redirect_link:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1024px) and (max-width:1950px) {
+       
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #cbcbcb;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background: #cbcbcb;
+    box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
+    border-radius: 100px;
+  
+  }
+  
+  .Basics {
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #cbcbcb;
+    color: #1b1a1a;
+    /*border: 4px #1b1a1a solid;
+    border-radius: 100px;*/
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+  }
+  
+  .login {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #e00000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .notlogo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .Basics,
+  .login {
+    display: inline-block; /* Display them side by side */
+    margin-left: 10px; /* Add spacing between the elements */
+  }
+  
+  .logo {
+    flex: 1; /* Allow the logo to take up available space on the left */
+  }
+  
+  /* Your existing styles for the desktop view go here */
+  
+  /* Hamburger menu icon styling */
+  .menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Media query for screens under 1000px */
+  @media (max-width: 800px) {
+    .notlogo {
+      display: none; /* Hide the regular menu items */
+    }
+  
+    .menu-button {
+      display: block; /* Show the hamburger menu icon */
+    }
+  
+    /* Additional styles for the dropdown menu */
+    .notlogo.active {
+      display: block;
+      background: #cbcbcb;
+      position: absolute;
+      top: 64px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+    }
+  
+    .Basics,
+    .login {
+      display: block; /* Display the menu items as a list */
+      margin: 5px 0;
+    }
+  
+    .container {
+        width: 100%; /* Set the width to 100% to make it adapt to the screen width */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+  
+  }
+  .Basicsah{
+    text-decoration: none;
+    color: #1B1A1A;
+  }
+  .Basicsam{
+    text-decoration: none;
+    color: #1B1A1A;
+  }
+  .Basicsaf{
+    text-decoration: none;
+    color: #1B1A1A;
+  }
+  .Basicsap{
+    text-decoration: none;
+    color: #1B1A1A;
+  }
+  .Basicsaa{
+    text-decoration: none;
+    color: #1B1A1A;
+  }
+  .logina{
+    text-decoration: none;
+    color: #1B1A1A;
+  }
+    body {
+        background: #1B1A1A;
+        height: 70vmax;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+    .sp_div2 {
+        position: relative;
+
+    }
+
+    .join_us {
+        width: 50vw;
+        height: 8vmax;
+        color: var(--Orange-red, #E00000);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Out Of My League;
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        left: 30vw;
+        top: 1vmax;
+    }
+
+    .sign_up_input {
+        position: relative;
+        left: 30vw;
+        font-size: 1.5vw;
+        display: flex;
+        width: 35vw;
+        height: 5.5vmin;
+        padding: auto;
+        align-items: center;
+        margin-top: 1.5rem;
+
+        top: 2.5rem;
+        gap: 10px;
+        border-radius: 100px;
+        background: var(--silver, #CBCBCB);
+    }
+
+    #sign_up_button {
+        position: relative;
+        width: 28.5vmin;
+        height: 9.5vmin;
+        padding: 12px 36px;
+        align-items: center;
+        gap: 10px;
+        border-radius: 100px;
+        left: 50rem;
+        margin-bottom: 5rem;
+        top: 5rem;
+        color: #CBCBCB;
+        background-color: #E00000;
+        font-size: 4.5vmin;
+    }
+
+    #sign_up_button:active {
+        background-color: #b30000;
+    }
+
+    #redirect {
+        width: 20rem;
+        position: relative;
+        top: 4rem;
+        left: 30vw;
+        color: #CBCBCB;
+        font-size: large;
+    }
+
+    #redirect_link {
+        text-decoration: none;
+        color: #CBCBCB;
+    }
+
+    #redirect_link:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+   
+    .Navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #cbcbcb;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background: #cbcbcb;
+        box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
+        border-radius: 100px;
+      
+      }
+      
+      .Basics {
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #cbcbcb;
+        color: #1b1a1a;
+        /*border: 4px #1b1a1a solid;
+        border-radius: 100px;*/
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      
+      .login {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 100px;
+        background-color: #e00000;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .notlogo {
+        display: flex;
+        align-items: center;
+      }
+      
+      .Basics,
+      .login {
+        display: inline-block; /* Display them side by side */
+        margin-left: 10px; /* Add spacing between the elements */
+      }
+      
+      .logo {
+        flex: 1; /* Allow the logo to take up available space on the left */
+      }
+      
+      /* Your existing styles for the desktop view go here */
+      
+      /* Hamburger menu icon styling */
+      .menu-button {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      
+      /* Media query for screens under 1000px */
+      @media (max-width: 800px) {
+        .notlogo {
+          display: none; /* Hide the regular menu items */
+        }
+      
+        .menu-button {
+          display: block; /* Show the hamburger menu icon */
+        }
+      
+        /* Additional styles for the dropdown menu */
+        .notlogo.active {
+          display: block;
+          background: #cbcbcb;
+          position: absolute;
+          top: 64px;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+        }
+      
+        .Basics,
+        .login {
+          display: block; /* Display the menu items as a list */
+          margin: 5px 0;
+        }
+      
+        .container {
+            width: 100%; /* Set the width to 100% to make it adapt to the screen width */
+            padding: 8px 16px; /* Adjust padding for smaller screens */
+        }
+      
+      }
+      .Basicsah{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsam{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsaf{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsap{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsaa{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .logina{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+
+
+    body {
+        background: #1B1A1A;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+
+    }
+
+
+
+
+
+
+
+    .sp_div2 {
+        position: relative;
+
+    }
+
+    .join_us {
+        width: 25rem;
+        height: 5rem;
+        color: var(--Orange-red, #E00000);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Out Of My League;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        left: 25vw;
+        top: 5rem;
+    }
+
+    .sign_up_input {
+
+        position: relative;
+        top: 6rem;
+        left: 20vw;
+        font-size: 1.3rem;
+        padding-left: 3rem;
+        display: flex;
+        width: 25rem;
+        height: 2rem;
+        align-items: center;
+        row-gap: 0rem;
+        margin-top: 2.5rem;
+        border-radius: 100px;
+        background: var(--silver, #CBCBCB);
+    }
+
+    #user_weight:onclick {
+        font-size: 1rem;
+
+
+    }
+
+    #sign_up_button {
+        position: relative;
+        width: 10rem;
+        height: 5rem;
+        padding: 12px 36px;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40rem;
+        border-radius: 100px;
+        left: 60vw;
+        top: 7rem;
+        color: #CBCBCB;
+        background-color: #E00000;
+        font-size: 4.5vmin;
+    }
+
+    #redirect {
+        width: 20rem;
+        position: relative;
+        top: 9rem;
+        left: 20vw;
+        color: #CBCBCB;
+        font-size: larger;
+    }
+
+    #redirect_link {
+        text-decoration: none;
+        color: #CBCBCB;
+    }
+
+    #redirect_link:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 481px) and (max-width:768px) {
+
+   
+    .Navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #cbcbcb;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background: #cbcbcb;
+        box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
+        border-radius: 100px;
+      
+      }
+      
+      .Basics {
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #cbcbcb;
+        color: #1b1a1a;
+        /*border: 4px #1b1a1a solid;
+        border-radius: 100px;*/
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      
+      .login {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 100px;
+        background-color: #e00000;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .notlogo {
+        display: flex;
+        align-items: center;
+      }
+      
+      .Basics,
+      .login {
+        display: inline-block; /* Display them side by side */
+        margin-left: 10px; /* Add spacing between the elements */
+      }
+      
+      .logo {
+        flex: 1; /* Allow the logo to take up available space on the left */
+      }
+      
+      /* Your existing styles for the desktop view go here */
+      
+      /* Hamburger menu icon styling */
+      .menu-button {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      
+      /* Media query for screens under 1000px */
+      @media (max-width: 800px) {
+        .notlogo {
+          display: none; /* Hide the regular menu items */
+        }
+      
+        .menu-button {
+          display: block; /* Show the hamburger menu icon */
+        }
+      
+        /* Additional styles for the dropdown menu */
+        .notlogo.active {
+          display: block;
+          background: #cbcbcb;
+          position: absolute;
+          top: 64px;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+        }
+      
+        .Basics,
+        .login {
+          display: block; /* Display the menu items as a list */
+          margin: 5px 0;
+        }
+      
+        .container {
+            width: 100%; /* Set the width to 100% to make it adapt to the screen width */
+            padding: 8px 16px; /* Adjust padding for smaller screens */
+        }
+      
+      }
+      .Basicsah{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsam{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsaf{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsap{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsaa{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .logina{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+
+
+
+    body {
+        background: #1B1A1A;
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+
+
+
+
+
+
+    .sp_div2 {
+        position: relative;
+
+    }
+
+    .join_us {
+        width: 60vh;
+        height: 5rem;
+        color: var(--Orange-red, #E00000);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Out Of My League;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        top: 2rem;
+        left: 20vw;
+        text-align: left;
+    }
+
+    .sign_up_input {
+        position: relative;
+        top: 1.5rem;
+        left: 20vw;
+        font-size: 1rem;
+        padding-left: 1rem;
+        display: flex;
+        width: 55vw;
+        height: 2rem;
+        align-items: center;
+        margin-top: 2rem;
+        border-radius: 100px;
+        background: var(--silver, #CBCBCB);
+    }
+
+    #user_weight:onclick {
+        font-size: 1rem;
+
+
+    }
+
+
+    #sign_up_button {
+        position: relative;
+        width: 10rem;
+        height: 4rem;
+        padding: 12px 36px;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 50px;
+        border-radius: 100px;
+        left: 60vw;
+        top: 3rem;
+        color: #CBCBCB;
+        background-color: #E00000;
+        font-size: 4.5vmin;
+    }
+
+    #redirect {
+        width: 20rem;
+        position: relative;
+        top: 3rem;
+        left: 20vw;
+        color: #CBCBCB;
+        font-size: large;
+    }
+
+    #redirect_link {
+        text-decoration: none;
+        color: #CBCBCB;
+    }
+
+    #redirect_link:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 320px) and (max-width:480px) {
+   
+    .Navbar {
+        
+        display: flex;
+        flex-direction: row;
+        background-color: #cbcbcb;
+        width: 90%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background: #cbcbcb;
+        box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
+        border-radius: 100px;
+      
+      }
+      
+      .Basics {
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #cbcbcb;
+        color: #1b1a1a;
+        /*border: 4px #1b1a1a solid;
+        border-radius: 100px;*/
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        word-wrap: break-word;
+        text-align: center;
+      }
+      
+      .login {
+        padding-left: 10px;
+        padding-right: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        font-weight: 400;
+        padding: 10px;
+        border-radius: 100px;
+        background-color: #e00000;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      
+      .navbar_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .notlogo {
+        display: flex;
+        align-items: center;
+      }
+      
+      .Basics,
+      .login {
+        display: inline-block; /* Display them side by side */
+        margin-left: 10px; /* Add spacing between the elements */
+      }
+      
+      .logo {
+        flex: 1; /* Allow the logo to take up available space on the left */
+      }
+      
+      /* Your existing styles for the desktop view go here */
+      
+      /* Hamburger menu icon styling */
+      .menu-button {
+        display: none;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+      }
+      
+      /* Media query for screens under 1000px */
+      @media (max-width: 800px) {
+        .notlogo {
+          display: none; /* Hide the regular menu items */
+        }
+      
+        .menu-button {
+          display: block; /* Show the hamburger menu icon */
+        }
+      
+        /* Additional styles for the dropdown menu */
+        .notlogo.active {
+          display: block;
+          background: #cbcbcb;
+          position: absolute;
+          top: 64px;
+          left: 0;
+          right: 0;
+          flex-direction: column;
+        }
+      
+        .Basics,
+        .login {
+          display: block; /* Display the menu items as a list */
+          margin: 5px 0;
+        }
+      
+        .container {
+            width: 100%; /* Set the width to 100% to make it adapt to the screen width */
+            padding: 8px 16px; /* Adjust padding for smaller screens */
+        }
+      
+      }
+      .Basicsah{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsam{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsaf{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsap{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .Basicsaa{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+      .logina{
+        text-decoration: none;
+        color: #1B1A1A;
+      }
+
+
+
+
+    body {
+        background: #1B1A1A;
+
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
+
+
+
+
+
+
+
+    .sp_div2 {
+        position: relative; 
+    }
+
+    .join_us {
+        width: 20rem;
+        height: 5rem;
+        color: var(--Orange-red, #E00000);
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-family: Out Of My League;
+        font-size: 2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        position: relative;
+        left: 8rem;
+        top: 2rem;
+    }
+
+    .sign_up_input {
+        position: relative;
+        gap: 2 rem;
+        top: 1.5rem;
+        left: 8rem;
+        font-size: 1rem;
+        padding-left: 3rem;
+        display: flex;
+        width: 15rem;
+        height: 2rem;
+        align-items: center;
+        margin-top: 1rem;
+        border-radius: 100px;
+        background: var(--silver, #CBCBCB);
+    }
+
+    #user_weight:onclick {
+        font-size: 1rem;
+
+
+    }
+
+   
+
+    #sign_up_button {
+        position: relative;
+        width: 10rem;
+        height: 4rem;
+        padding: 12px 36px;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 40rem;
+        border-radius: 100px;
+        left: 13rem;
+        top: 3rem;
+        color: #CBCBCB;
+        background-color: #E00000;
+        font-size: 4.5vmin;
+    }
+
+    #redirect {
+        width: 20rem;
+        position: relative;
+        top: 3rem;
+        left: 6rem;
+        color: #CBCBCB;
+        font-size: large;
+    }
+
+    #redirect_link {
+        text-decoration: none;
+        color: #CBCBCB;
+    }
+
+    #redirect_link:hover {
+        text-decoration: none;
+        color: #ffffff;
+    }
+
+
+
+
+
+
+
+
+
+}

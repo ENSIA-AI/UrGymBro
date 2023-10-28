@@ -1,0 +1,211 @@
+
+
+@media (max-width:1360px) {
+
+
+    @media (max-width: 768px) {
+        body {
+            background-image: url('small-background.jpg');
+        }
+    }
+ 
+    body{
+
+     background-color: #1B1A1A;
+    }
+ 
+    .profile{ 
+        width: 40vw;
+     color: var(--Orange-red, #E00000);
+ margin-top: 3vw;
+     float: left;
+     font-family: Out Of My League;
+     font-size: 5vw;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ text-align: center;
+ }
+ 
+ 
+ 
+ 
+ .profile_all{
+     border-radius: 20%;
+     background: var(--Black, #1B1A1A);
+     box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.25) inset, 0px 16px 30px 0px rgba(0, 0, 0, 0.25);
+ display: flex;
+ flex-direction: row;
+ align-items: stretch;
+ align-content: stretch;
+ position: relative;
+ top: 10vw;
+ margin-bottom: 10vw;
+ left: -10vw;
+ 
+ width: 50vw;
+ height: 35vw;
+ align-items: center;
+ 
+ }
+ .profile_content{
+     color: var(--silver, #CBCBCB);
+   margin-top: 10px;
+    width: 60%;
+    height: 90%;
+ margin-left: 30px;
+ font-size: 2.3vw;
+ 
+ }
+ 
+ 
+ .profile_text{
+     color: var(--silver, #CBCBCB);
+     text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+     font-size: 2.3vw;
+ margin-left: 50px;;
+     left: 25px;
+     height: 90%;
+     width: 25%;
+ text-align: center;
+ }
+
+
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 1361px) { 
+   
+    @media (max-width: 768px) {
+        body {
+            background-image: url('small-background.jpg');
+        }
+    }
+ 
+    body{
+
+     background-color: #1B1A1A;
+    }
+ 
+    .profile{ 
+        width: 40vw;
+     color: var(--Orange-red, #E00000);
+ margin-top: 3vw;
+     float: left;
+     font-family: Out Of My League;
+     font-size: 5vw;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+ text-align: center;
+ 
+ 
+ }
+ 
+ 
+ 
+ 
+ .profile_all{
+    
+     border-radius: 20%;
+     background: var(--Black, #1B1A1A);
+     box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.25) inset, 0px 16px 30px 0px rgba(0, 0, 0, 0.25);
+ display: flex;
+ flex-direction: row;
+ align-items: stretch;
+ align-content: stretch;
+ position: relative;
+ top: 10vw;
+ left: -15vw;
+ width: 45vw;
+ height: 35vw;
+ align-items: center;
+ 
+ }
+ .profile_content{
+     color: var(--silver, #CBCBCB);
+   margin-top: 10px;
+    width: 60%;
+    height: 90%;
+ margin-left: 30px;
+ font-size: 2.5vw;
+ 
+ }
+ 
+ 
+ .profile_text{
+     color: var(--silver, #CBCBCB);
+     text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+     font-size: 2.5vw;
+ margin-left: 50px;;
+     left: 25px;
+     height: 90%;
+     width: 25%;
+ text-align: center;
+ }
+ }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

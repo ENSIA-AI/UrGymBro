@@ -49,7 +49,7 @@ var my_products = [
     product_link: '"',
   },
   {
-    product_name: "gold standard whey",
+    product_name: "gold whey",
     product_type: "suplement",
     product_price: "82000",
     product_description: "qqq",
@@ -207,16 +207,7 @@ function hide_text() {
   while (i < 9) {
     let pd = document.getElementById("product" + (i + 1) + "_description");
     pd.innerHTML = pd.innerHTML.substring(0, 100);
-    let link = document.createElement("a");
-    let text = document.createTextNode(" ...see more here");
-    link.href = "specific_product_page.html";
-    link.appendChild(text);
-
-    pd.appendChild(link);
-    link.setAttribute("id", "see_more");
-    link.style.textDecoration = "none";
-    link.style.color = "#1B1A1A";
-    link.style;
+ 
 
     i++;
   }

@@ -1,0 +1,245 @@
+body {
+    background-color: #1B1A1A;
+    padding: 100px;
+    flex: content;
+    flex-direction: column;
+}
+
+#picture{
+    width: 50px;
+    height: 50px;
+}
+
+.title {
+    height: 200px;
+    width: 100%;
+    flex: 1 0 0;
+    color: var(--Orange-red, #E00000);
+    font-family: Out Of My League;
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #1B1A1A;
+    text-align: center;
+}
+
+#see_more {
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    padding: 20px;
+}
+
+.product {
+    flex: content;
+    flex-direction: center;
+    padding: 30px;
+    background: var(--silver, #CBCBCB);
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset;
+    margin-bottom: 30px;
+    max-width: 600px;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+    
+    position: relative;
+    left: 26.00%;
+}
+
+.products_container {
+    flex: content;
+    flex-direction: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.product_img {
+    align-items: center;
+    align-self: stretch;
+    position: relative;
+    left: 28%;
+}
+
+footer {
+    padding-top: 40px;
+    background-color: #1B1A1A;
+    color: #CBCBCB;
+    position: absolute;
+    margin-top: 100px;
+    width: 80%;
+
+}
+
+.container3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+.footerplogo {
+    
+    margin-left: 30px;
+}
+
+.description {
+    font-family: Montserrat;
+    margin-top: 35px;
+    
+    }
+
+
+.FollowIcons {
+    font-family: Montserrat;
+    margin-top: 10px;
+
+    
+}
+
+.Icons {
+    margin-left: 0px;
+    margin-top: 30px;
+    display: flex;
+    
+    }
+
+.Form {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+
+    }
+
+.emal {
+    font-family: Montserrat;
+    
+    }
+
+.follow {
+    display: flex;
+    flex-direction: column;
+}
+
+/* -----------------Navbar code goes here----------------- */
+
+.Navbar {
+    display: flex;
+    flex-direction: row;
+    background-color: #cbcbcb;
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    background: #cbcbcb;
+    box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
+    border-radius: 100px;
+
+}
+
+.Basics {
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #cbcbcb;
+    color: #1b1a1a;
+    /*border: 4px #1b1a1a solid;
+    border-radius: 100px;*/
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.login {
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    font-size: 14px;
+    font-family: Montserrat;
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 100px;
+    background-color: #e00000;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbar_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.notlogo {
+    display: flex;
+    align-items: center;
+}
+
+.Basics,
+.login {
+    display: inline-block;
+    /* Display them side by side */
+    margin-left: 10px;
+    /* Add spacing between the elements */
+}
+
+.logo {
+    flex: 1;
+    /* Allow the logo to take up available space on the left */
+}
+
+/* Hamburger menu icon styling */
+.menu-button {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Media query for screens under 1000px */
+@media (max-width: 800px) {
+    .notlogo {
+        display: none;
+        /* Hide the regular menu items */
+    }
+
+    .menu-button {
+        display: block;
+        /* Show the hamburger menu icon */
+    }
+
+    /* Additional styles for the dropdown menu */
+    .notlogo.active {
+        display: block;
+        background: #cbcbcb;
+        position: absolute;
+        top: 64px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+    }
+
+    .Basics,
+    .login {
+        display: block;
+        /* Display the menu items as a list */
+        margin: 5px 0;
+    }
+}

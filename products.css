@@ -262,10 +262,10 @@
     font-size: 1.7vw;
   }
   .product_name {
-    right: 10%;
+    right: 7%;
     top: 1vw;
     position: absolute;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: left;
     width: 50%;
     height: 4vw;
@@ -697,10 +697,10 @@ margin-left: 15px;
     font-size: 1.7vw;
   }
   .product_name {
-    right: 15%;
+    right: 10%;
     top: 1vw;
     position: absolute;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: left;
     width: 50%;
     height: 4vw;
@@ -1135,7 +1135,7 @@ margin-left: 15px;
     right: 20%;
     top: 1vw;
     position: absolute;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: left;
     width: 50%;
     height: 4vw;
@@ -1619,11 +1619,11 @@ margin-left: 15px;
     font-size: 1.5vw;
   }
   .product_name {
-    position: relative;
-    right: 10%;
+    position:relative;
+    right: 7%;
     top: 1vw;
     position: absolute;
-    font-size: 2.5vw;
+    font-size: 2vw;
     text-align: left;
     width: 50%;
     height: 4vw;

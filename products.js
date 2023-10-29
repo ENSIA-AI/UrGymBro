@@ -204,17 +204,7 @@ var my_products = [
     while(i<9){
     let pd=document.getElementById("product" + (i + 1) + "_description");
     pd.innerHTML=pd.innerHTML.substring(0,100);
-    let link=document.createElement('a');
-    let text=document.createTextNode(" ...see more here")
-    link.href="specific_product_page.html";
-    link.appendChild(text);
     
-    pd.appendChild(link);
-    link.setAttribute('id','see_more');
-    link.style.textDecoration="none";
-    link.style.color="#1B1A1A"
-    link.style
-   
     i++;
     }
     

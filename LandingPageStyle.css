@@ -502,10 +502,34 @@ footer{
     text-decoration: none;
     color: #1B1A1A;
   }
-
+}
 /* -----------------Navbar code ends here----------------- */
 
 
+.Basicsah{
+  text-decoration: none;
+  color: #e00000;
+}
+.Basicsam{
+  text-decoration: none;
+  color: #1B1A1A;
+}
+.Basicsaf{
+  text-decoration: none;
+  color: #1B1A1A;
+}
+.Basicsap{
+  text-decoration: none;
+  color: #1B1A1A;
+}
+.Basicsaa{
+  text-decoration: none;
+  color: #1B1A1A;
+}
+.logina{
+  text-decoration: none;
+  color: #1B1A1A;
+}
 
   body {
     background-image: url("images/Landingpagebackground.jpg");
@@ -716,7 +740,7 @@ footer{
   }
 
 }
-}
+
 
 
 

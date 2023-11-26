@@ -28,19 +28,19 @@
               <button class="menu-button">&#9776;</button>
               <!-- Hamburger menu icon-->
               <div class="notlogo" id="menuOptions">
-                <div class="Basics"><a href="landingpage.html" class="Basicsah"><b>HOME</b></a></div>
+                <div class="Basics"><a href="homepage.html" class="Basicsah"><b>HOME</b></a></div>
                 <div class="Basics"><a href="maps.html" class="Basicsam"><b>MAPS</b></a></div>
                 <div class="Basics"><a href="products.html" class="Basicsap"><b>PRODUCTS</b></a></div>
-                <div class="Basics"><a href="Food1.html" class="Basicsaf"><b>FOOD</b></a></div>
-                <div class="Basics"><a href="aboutus.html" class="Basicsaa"><b>ABOUT</b></a></div>
-                <div class="login"><a href="login.html" class="logina"><b>LOG IN</b></a></div>
+                <div class="Basics"><a href="Food.html" class="Basicsaf"><b>FOOD</b></a></div>
+                <div class="Basics"><a href="About_Us_webdev.html" class="Basicsaa"><b>ABOUT</b></a></div>
+                <div class="login"><a href="Login_Page_webdev.html" class="logina"><b>LOG IN</b></a></div>
              
               </div>
             </div>
           </div> 
    
 <div class="options">
-<div class="contain"> <div class="recepies"><a href="Food1.html" class="containar "><b>RECIPES</b></a></div></div>
+<div class="contain"> <div class="recepies"><a href="Food.html" class="containar "><b>RECIPES</b></a></div></div>
 <div class="contain"><div class="snacks"><a href="Snack1.html" class="containas "><b>SNACKS</b></a></div> </div> </div>
 
 <div class="foods">
@@ -144,18 +144,100 @@
     <div class="box box1"><a href="Snack1.html" class="boxx">1</a></div>
     <div class="box box2"><a href="Snack2.html" class="boxx">2</a></div>
  </div>
+
  <footer>
-    <div class="container3">
-     <div class="footerplogo"><div class= "footerlogo"> <image src="images/footerlogo.svg" alt="UR" width="190" height="130" > </div>
-     <div class="description">  <p>A website dedicated to helping you<br> become your best form while providing<br> you with the right diet, products<br> and even finding the right<br> gym for you! </p></div></div>
-     <div class="follow"><div class="FollowIcons"> <p>FOLLOW US</p></div>
-     <div class="Icons"> <image src="images/🦆 icon _facebook_.svg" alt="Facebook" width="60" height="50"/>  <image src="images/🦆 icon _instagram_.svg" alt="Instagram" width="60" height="50"/></div>
- </div>
- <form class="Form">
-       <label for = "emal"> <div class="emal">Contact us</div></label>
-       <input type="email" id="email" name="email" value="Email"/>
-       <input type="textarea" id="textarea" name="textarea" value="Message" maxlength="300"/>
-     </form>
-   </div></footer>
+    <div class="footer-container">
+        <div class="footer-logo">
+            <span class='app-name'>
+                <img src="Logo red and gray.svg" width="200" height="100">
+            </span>
+            <p>A website dedicated to helping you become your <strong> Best Form</strong> while providing you with
+                the
+                <strong>Right Diet</strong>, <strong>Products</strong> and even finding the <strong> Right
+                    Gym</strong> for you!
+            </p>
+        </div>
+        <div class="useful-links">
+            <div class="footer-title">Useful Links</div>
+            <ul>
+                <li><a href="homepage.html" class="homea">Home</a></li>
+                <li><a href="maps.html" class="homea">Maps</a></li>
+                <li><a href="products.html" class="homea">Products</a></li>
+                <li> <a href="food.html" class="homea">Food</a></li>
+                <li> <a href="aboutus.html" class="homea">About Us</a></li>
+                <li> <a href="login.html" class="homea">Log In</a></li>
+            </ul>
+        </div>
+
+        <div class="help-sec">
+            <div class="footer-title">Help</div>
+            <ul>
+                <li>Help Me</li>
+                <li>Feedback</li>
+                <li>Report an Issue / Bug</li>
+            </ul>
+        </div>
+        <div class="GETINTOUCH">
+            <div class="footer-title">Get in Touch</div>
+            <div class="footer-forms">
+                <form action="/" method="post" class="space-y-2" id="contactForm" onsubmit="return validateForm();">
+                    <input type="email" name="g-email" class="g-inp" id="g-email" placeholder='Email' required />
+                    <span id="emailError" class="error"></span>
+
+                    <textarea type="text" name="g-msg" class="g-inp" id="g-msg" placeholder='Message...'
+                        required></textarea>
+                    <span id="messageError" class="error"></span>
+
+                    <button type="submit" class='f-btn'>Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+        <script>
+            function validateForm() {
+                var email = document.getElementById("g-email").value;
+                var message = document.getElementById("g-msg").value;
+                var emailError = document.getElementById("emailError");
+                var messageError = document.getElementById("messageError");
+
+                var emailPattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/;
+                if (!emailPattern.test(email)) {
+                    emailError.innerHTML = "Please enter a valid email address.";
+                    return false;
+                } else {
+                    emailError.innerHTML = "";
+                }
+
+                if (message.trim() === "") {
+                    messageError.innerHTML = "Please enter a message.";
+                    return false;
+                } else {
+                    messageError.innerHTML = "";
+                }
+
+
+                var newWindow = window.open('', '_blank');
+                newWindow.alert("Form submitted successfully!");
+
+                document.getElementById("contactForm").reset();
+                return false;
+            }
+        </script>
+
+
+
+        <div class="FOLLOWUS">
+            <div class="footer-title">Follow Us</div>
+            <div class="footer-icons">
+                <image src="facebook-3-logo-svgrepo-com.svg" alt="Facebook" width="50" height="30" />
+                <image src="instagram-2016-logo-svgrepo-com.svg" alt="Instagram" width="50" height="30" />
+                <image src="twitter-3-logo-svgrepo-com.svg" alt="Twitter" width="50" height="30" />
+                <image src="linkedin-icon-logo-svgrepo-com.svg" alt="Linkedin" width="50" height="30" />
+            </div>
+        </div>
+    </div>
+    <div class='cr-con'>Copyright &copy; 2023 | Made by UrGymBro TEAM</div>
+</footer>
 </div>
 </body>

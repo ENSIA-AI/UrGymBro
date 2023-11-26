@@ -1,8 +1,14 @@
 body {
-    background-color: #1B1A1A;
-    padding: 100px;
     flex: content;
     flex-direction: column;
+    background-image: url("metal-plate-texture.jpg");
+    background-color: #1B1A1A;
+
+}
+
+.a {
+    text-decoration: none;
+    color: #1B1A1A;
 }
 
 
@@ -22,8 +28,6 @@ body {
     font-family: Montserrat;
     outline: none;
     cursor: pointer;
-    /* Add pointer cursor for better user experience */
-    /* Disable the default browser arrow */
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -33,13 +37,11 @@ body {
     position: absolute;
     top: 50%;
     right: 10px;
-    /* Adjust the right value to control the distance from the right edge */
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
     background: url('arrow-down.svg') no-repeat center center;
     background-size: contain;
-    /* Adjust the background size to fit your arrow image */
 }
 
 
@@ -55,6 +57,7 @@ body {
     line-height: normal;
     margin-bottom: 50px;
     margin-top: 50px;
+    margin-left: 100px;
 }
 
 .text_box {
@@ -90,7 +93,6 @@ body {
 .container {
     width: 600px;
     height: auto;
-    /* Set height to auto to fit the content */
     padding: 12px 36px;
     border-radius: 100px;
     background: var(--silver, #CBCBCB);
@@ -127,18 +129,17 @@ body {
 }
 
 .custom-select select:hover {
-    background-color: #FF5733; /* Change the background color on hover */
-    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7); /* Add a glow effect on hover */
+    background-color: #FF5733; 
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7); 
 }
 
 .custom-select select:active {
     background-color: rgba(224, 0, 0, 0.7);
-    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset; /* Revert to the original box shadow when clicked */
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset; 
 }
 
-/* Apply the hover and active effects to the results boxes */
 .container:hover {
-    background-color: #FF5733; /* Change the background color on hover */
+    background-color: #FF5733; 
     box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7); /* Add a glow effect on hover */
 }
 
@@ -147,8 +148,6 @@ body {
     box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset; /* Revert to the original box shadow when clicked */
 }
 
-
-/* -----------------Navbar code goes here----------------- */
 
 .Navbar {
     display: flex;
@@ -162,7 +161,7 @@ body {
     background: #cbcbcb;
     box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
     border-radius: 100px;
-
+    margin: 100px;
 }
 
 .Basics {
@@ -171,8 +170,6 @@ body {
     padding-right: 10px;
     background: #cbcbcb;
     color: #1b1a1a;
-    /*border: 4px #1b1a1a solid;
-    border-radius: 100px;*/
     justify-content: center;
     align-items: center;
     font-size: 14px;
@@ -211,17 +208,13 @@ body {
 .Basics,
 .login {
     display: inline-block;
-    /* Display them side by side */
     margin-left: 10px;
-    /* Add spacing between the elements */
 }
 
 .logo {
     flex: 1;
-    /* Allow the logo to take up available space on the left */
 }
 
-/* Hamburger menu icon styling */
 .menu-button {
     display: none;
     background: none;
@@ -229,52 +222,36 @@ body {
     font-size: 24px;
     cursor: pointer;
 }
-    
-.Basicsah{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsam{
-    text-decoration: none;
-    color: #e00000;
-  }
-  .Basicsaf{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsap{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsaa{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .logina{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  @font-face {
-    font-family:"Out Of My League";
-    src: url("OutOfMyLeague.ttf") format("truetype");
-  }
-/* Media query for screens under 1000px */
+
+.Basics:hover {
+    animation: glow 1s infinite alternate;
+}
+
+.login:hover {
+    animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+    0% {
+        color: #ffffff;
+        text-shadow: 0 0 5px #e00000, 0 0 10px #e00000, 0 0 15px #e00000;
+    }
+
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
+    }
+}
+
 @media (max-width: 800px) {
-    @font-face {
-        font-family:"Out Of My League";
-        src: url("OutOfMyLeague.ttf") format("truetype");
-      }
     .notlogo {
         display: none;
-        /* Hide the regular menu items */
     }
 
     .menu-button {
         display: block;
-        /* Show the hamburger menu icon */
     }
 
-    /* Additional styles for the dropdown menu */
     .notlogo.active {
         display: block;
         background: #cbcbcb;
@@ -288,35 +265,32 @@ body {
     .Basics,
     .login {
         display: block;
-        /* Display the menu items as a list */
         margin: 5px 0;
     }
 
     .container {
         width: 100%;
-        /* Set the width to 100% to make it adapt to the screen width */
         padding: 8px 16px;
-        /* Adjust padding for smaller screens */
     }
 
     .custom-select {
         width: 100%;
-        /* Adjust the width for smaller screens */
     }
 
     .custom-select select {
         padding: 8px 16px;
-        /* Adjust the padding for smaller screens */
     }
 
-    /* Adjust the arrow's position or size for smaller screens if necessary */
     .custom-select .custom-arrow {
         right: 5px;
-        /* Example adjustment for arrow position */
         width: 16px;
-        /* Example adjustment for arrow size */
         height: 16px;
-        /* Example adjustment for arrow size */
+    }
+
+    .custom-select .custom-arrow {
+        right: 5px;
+        width: 16px;
+        height: 16px;
     }
 
     .text{
@@ -326,29 +300,4 @@ body {
     .title{
         font-size: 140px;
     }
-    
-.Basicsah{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsam{
-    text-decoration: none;
-    color: #e00000;
-  }
-  .Basicsaf{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsap{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsaa{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .logina{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
 }

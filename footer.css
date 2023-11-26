@@ -1,54 +1,134 @@
+*{
+    margin: 0; padding: 0;
+    border: 0; outline: 0;
+    font-family:system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
 
+
+
+.footer-forms{ 
+  margin-top: -140px;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
+}
 footer{
-    padding-top: 40px;
-    background-color: #1B1A1A;
-    color: #CBCBCB;
-    position:absolute;
-    margin-top: 1200px;
-    width: 100%;
-
+    background-color: rgb(255, 255, 255) ;
+    background-image: url("abstract-red-light-lines-pipe-speed-zoom-black-background-technology_1142-10950.jpg");
 }
-
-.container3{
-    display:flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.footerplogo{
- margin-left: 30px;
-}
-
-.description{
-    font-family: Montserrat;
-    margin-top: 35px;
+.footer-container{
+    margin-top: 1120px;
+    padding: 1.5rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-gap: 2rem;
 }
 
 
-.FollowIcons{
-    font-family: Montserrat;
-    margin-top: 10px;
-    
-    
+
+footer .footer-logo p{
+    color: white;
 }
 
-.Icons{
-    margin-left: 0px;
-    margin-top: 30px;
+
+footer .footer-title{ 
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: white;
+    border-left: 4px solid #e00000;
+    padding-left: 1.5rem;
+    height: fit-content;
+}
+footer ul{ 
+    padding-left: 1.75rem;
+    color: white;
+    font-size: 0.875rem/* 14px */;
+    line-height: 1.25rem;
+    margin-top: .5rem;
+}
+footer ul li{ 
+    margin: .25rem 0;
+    cursor: pointer;
+    color: #d4d4d4;
+    width: fit-content;
+}
+footer ul li:hover{
+    color: #e00000;
+    text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+}
+footer .help-sec{
+    grid-column-start: 2;
+}
+
+footer .homea{
+    text-decoration: none;
+    color: #d4d4d4;
+}
+
+
+
+footer .homea:hover{
+    color: #e00000;
+    text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+}
+
+
+
+
+
+footer .cr-con{
+    background-color: #232127;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
+}
+.GETINTOUCH{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.GETINTOUCH form{
     display: flex;
-}
-
-.Form{
-    display:flex;
     flex-direction: column;
-    margin-left: 0px;
-
-}
-.emal{
-    font-family: Montserrat;
-}
-.follow{
-    display: flex;
-    flex-direction: column;
+    margin-top: 0rem;
+    --tw-space-y-reverse: 0;
+    margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+
+form .g-inp{
+    padding: .25rem .5rem;
+    font-size: 16px;
+}
+.g-inp textarea{
+    height: 250px;
+}
+.f-btn{
+    padding: .25rem 1rem;
+    background-color: #e00000;
+    border-radius: .25rem;
+    font-size: 16px;
+    color: white;
+    font-weight: 500;
+}
+.footer-icons img:hover {
+    cursor: pointer;
+}
+
+.error {
+    color: red;
+}
+
+.FOLLOWUS{
+    display: grid;
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}

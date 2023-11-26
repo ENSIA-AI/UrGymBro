@@ -1,302 +1,144 @@
-@media (min-width: 1024px) {
-    body{
-        background-color: black;
-    }  
-    .Navbar {
-      display: flex;
-      flex-direction: row;
-      background-color: #cbcbcb;
-      width: 100%;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 10px;
-      padding-bottom: 5px;
-      background: #cbcbcb;
-      box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
-      border-radius: 100px;
+body {
+    background-color: #1B1A1A;
+    padding: 100px;
+    flex: content;
+    flex-direction: column;
+    font-family: montserrat;
+    background-image: url("metal-plate-texture.jpg");
+}
+
+.welcome_back_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.welcome_back {
+    height: fit-content;
+    color: var(--Orange-red, #E00000);
+    font-family: "Out of my league";
+    font-size: 180px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    text-align: center;
     
-    }
-    
-    .Basics {
-      padding: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
-      background: #cbcbcb;
-      color: #1b1a1a;
-      /*border: 4px #1b1a1a solid;
-      border-radius: 100px;*/
-      justify-content: center;
-      align-items: center;
-      font-size: 14px;
-      font-family: Montserrat;
-      font-weight: 400;
-      word-wrap: break-word;
-      text-align: center;
-    }
-    
-    .login {
-      padding-left: 10px;
-      padding-right: 10px;
-      color: white;
-      font-size: 14px;
-      font-family: Montserrat;
-      font-weight: 400;
-      padding: 10px;
-      border-radius: 100px;
-      background-color: #e00000;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-    
-    .navbar_container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    
-    .notlogo {
-      display: flex;
-      align-items: center;
-    }
-    
-    .Basics,
-    .login {
-      display: inline-block; /* Display them side by side */
-      margin-left: 10px; /* Add spacing between the elements */
-    }
-    
-    .logo {
-      flex: 1; /* Allow the logo to take up available space on the left */
-    }
-    
-    /* Your existing styles for the desktop view go here */
-    
-    /* Hamburger menu icon styling */
-    .menu-button {
-      display: none;
-      background: none;
-      border: none;
-      font-size: 24px;
-      cursor: pointer;
-    }
-    
-    /* Media query for screens under 1000px */
-    @media (max-width: 800px) {
-      .notlogo {
-        display: none; /* Hide the regular menu items */
-      }
-    
-      .menu-button {
-        display: block; /* Show the hamburger menu icon */
-      }
-    
-      /* Additional styles for the dropdown menu */
-      .notlogo.active {
-        display: block;
-        background: #cbcbcb;
-        position: absolute;
-        top: 64px;
-        left: 0;
-        right: 0;
-        flex-direction: column;
-      }
-    
-      .Basics,
-      .login {
-        display: block; /* Display the menu items as a list */
-        margin: 5px 0;
-      }
-    
-      .container {
-          width: 100%; /* Set the width to 100% to make it adapt to the screen width */
-          padding: 8px 16px; /* Adjust padding for smaller screens */
-      }
-    
-    }
-    .Basicsah{
-      text-decoration: none;
-      color: #1b1b1b;
-    }
-    .Basicsam{
-      text-decoration: none;
-      color: #1B1A1A;
-    }
-    .Basicsaf{
-      text-decoration: none;
-      color: #1B1A1A;
-    }
-    .Basicsap{
-      text-decoration: none;
-      color: #1B1A1A;
-    }
-    .Basicsaa{
-      text-decoration: none;
-      color: #1B1A1A;
-    }
-    .logina{
-      text-decoration: none;
-      color: #1B1A1A;
-    }
-    body {
-        background-color: #1B1A1A;
-        padding: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* Center vertically */
-    }
+}
 
-    .welcome_back_container {
-        display: flex;
-        /* Use display: flex to center the text and inputs vertically */
-        align-items: center;
-        /* Center vertically */
-        flex-direction: column;
-    }
+form {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
 
-    .welcome_back {
-        height: fit-content;
-        color: var(--Orange-red, #E00000);
-        font-family: Out Of My League;
-        font-size: 180px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        text-align: center;
-    }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
 
-    form {
-        width: 100%;
-        /* Make the form container flexible */
-        max-width: 600px;
-        /* Add a maximum width to the form to prevent it from becoming too wide */
-        display: flex;
-        flex-direction: column;
-        /* Display form elements vertically */
-        align-items: center;
-        /* Center form elements horizontally */
-        padding: 20px;
-        /* Add padding to the form container */
-        box-sizing: border-box;
-        /* Include padding and border within the specified width */
-    }
+.sign_up_input {
+    width: 100%;
+    max-width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-radius: 100px;
+    background: var(--silver, #CBCBCB);
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset;
+    font-family: Montserrat;
+    outline: none;
+    border: none;
+    box-sizing: border-box;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-    .sign_up_input {
-        width: 100%;
-        /* Make the input fields flexible */
-        max-width: 100%;
-        /* Add a maximum width to prevent input fields from stretching too much */
-        padding: 12px;
-        margin-bottom: 20px;
-        font-size: 24px;
-        border-radius: 100px;
-        background: var(--silver, #CBCBCB);
-        box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset;
-        font-family: Montserrat;
-        outline: none;
-        border: none;
-        box-sizing: border-box;
-        /* Include padding and border within the specified width */
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        /* Add a smooth transition effect */
-    }
+.sign_up_input:hover {
+    background-color: #FF5733;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
+}
 
-    .sign_up_input:hover {
-        background-color: #FF5733;
-        /* Change the background color on hover */
-        box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
-        /* Add a glow effect on hover */
-    }
-
-    .sign_up_input:active {
-        background-color: rgba(224, 0, 0, 0.7);
-    }
-
-
-
-    .button_container {
-        width: 100%;
-        /* Set the width of the button container to 100% */
-        display: flex;
-        /* Use display: flex to create a flex container */
-        justify-content: flex-end;
-        /* Push the button to the right */
-        margin-top: 20px;
-        /* Add margin for spacing */
-    }
-
-
-    #login_button {
-        position: relative;
-        width: 100%;
-        padding: 20px;
-        align-items: center;
-        color: #ffffff;
-        background-color: #E00000;
-        font-size: 40px;
-        border: none;
-        appearance: none;
-        font-family: Montserrat;
-        border-radius: 100px;
-        margin-top: 60px;
-
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        /* Add a smooth transition effect */
-    }
-
-    #login_button:hover {
-        background-color: #FF5733;
-        /* Change the background color on hover */
-        box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
-        /* Add a glow effect on hover */
-    }
-
-    #login_button:active {
-        background-color: rgba(224, 0, 0, 0.7);
-        /* Change the background color when clicked */
-        box-shadow: 0px 0px 20px 0px rgba(224, 0, 0, 0.7);
-        /* Add a glow effect when clicked */
-    }
-
-
-    @font-face {
-        font-family: "Out Of My League";
-        src: url("OutOfMyLeague.ttf") format("truetype");
-    }
-
-
-    .create {
-        margin-left: 20px;
-        font-family: Montserrat, sans-serif;
-        font-size: 20px;
-        color: #CBCBCB;
-        justify-content: flex-start;
-        line-height: 0px;
-        display: flex;
-        gap: 10px;
-    }
-
-
-
-
-    .createa {
-        text-decoration: none;
-        color: #E00000;
-    }
+.sign_up_input:active {
+    background-color: rgba(224, 0, 0, 0.7);
 }
 
 
 
-@media (min-width: 636px) and (max-width: 1023px) {
-      
+.button_container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+
+#login_button {
+    position: relative;
+    width: 100%;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+    align-items: center;
+    color: #ffffff;
+    background-color: #E00000;
+    font-size: 24px;
+    border: none;
+    appearance: none;
+    font-family: Montserrat;
+    border-radius: 100px;
+    margin-top: 50px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+#login_button:hover {
+    cursor: pointer;
+    transition: 400ms;
+    background-color: #ff1b1b;
+    box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
+}
+
+#login_button:active {
+    background-color: rgba(224, 0, 0, 0.7);
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset;
+}
+
+.alert-message {
+    padding: 5px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    margin-bottom: 15px;
+    font-family: Montserrat;
+    color: #E00000;
+    font-weight: 700;
+    display: none;
+}
+
+@font-face {
+    font-family: "Out of my league";
+    src: url("OutOfMyLeague.ttf") format("truetype");
+}
+
+/* -----------------Navbar code goes here----------------- */
+
 .Navbar {
     display: flex;
     flex-direction: row;
     background-color: #cbcbcb;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-right: 40px;
     width: 100%;
     padding-left: 30px;
     padding-right: 30px;
@@ -305,565 +147,286 @@
     background: #cbcbcb;
     box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
     border-radius: 100px;
-  
-  }
-  
-  .Basics {
+}
+
+.Basics {
     padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
     background: #cbcbcb;
     color: #1b1a1a;
-    /*border: 4px #1b1a1a solid;
-    border-radius: 100px;*/
-    justify-content: center;
-    align-items: center;
     font-size: 14px;
     font-family: Montserrat;
-    font-weight: 400;
-    word-wrap: break-word;
-    text-align: center;
-  }
-  
-  .login {
+}
+
+.Basics a:hover {
+  text-decoration: underline;
+  animation: glow 1s infinite alternate;
+
+}
+
+.login {
     padding-left: 10px;
     padding-right: 10px;
     color: white;
     font-size: 14px;
     font-family: Montserrat;
-    font-weight: 400;
-    padding: 10px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     border-radius: 100px;
-    background-color: #e00000;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .navbar_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .notlogo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .Basics,
-  .login {
-    display: inline-block; /* Display them side by side */
-    margin-left: 10px; /* Add spacing between the elements */
-  }
-  
-  .logo {
-    flex: 1; /* Allow the logo to take up available space on the left */
-  }
-  
-  /* Your existing styles for the desktop view go here */
-  
-  /* Hamburger menu icon styling */
-  .menu-button {
-    display: none;
-    background: none;
-    border: none;
-    font-size: 24px;
+    background-color: #1B1A1A;
     cursor: pointer;
-  }
-  
-  /* Media query for screens under 1000px */
-  @media (max-width: 800px) {
-    .notlogo {
-      display: none; /* Hide the regular menu items */
-    }
-  
-    .menu-button {
-      display: block; /* Show the hamburger menu icon */
-    }
-  
-    /* Additional styles for the dropdown menu */
-    .notlogo.active {
-      display: block;
-      background: #cbcbcb;
-      position: absolute;
-      top: 64px;
-      left: 0;
-      right: 0;
-      flex-direction: column;
-    }
-  
-    .Basics,
-    .login {
-      display: block; /* Display the menu items as a list */
-      margin: 5px 0;
-    }
-  
-    .container {
-        width: 100%; /* Set the width to 100% to make it adapt to the screen width */
-        padding: 8px 16px; /* Adjust padding for smaller screens */
-    }
-  
-  }
-  .Basicsah{
-    text-decoration: none;
-    color: #e00000;
-  }
-  .Basicsam{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsaf{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsap{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .Basicsaa{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  .logina{
-    text-decoration: none;
-    color: #1B1A1A;
-  }
-  /* -----------------Navbar code ends here----------------- */
-  
-    body {
-        background-color: #1B1A1A;
-        padding: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* Center vertically */
-    }
-
-    .welcome_back_container {
-        display: flex;
-        /* Use display: flex to center the text and inputs vertically */
-        align-items: center;
-        /* Center vertically */
-        flex-direction: column;
-    }
-
-    .welcome_back {
-        height: fit-content;
-        color: var(--Orange-red, #E00000);
-        font-family: Out Of My League;
-        font-size: 140px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    form {
-        width: 100%;
-        /* Make the form container flexible */
-        max-width: 600px;
-        /* Add a maximum width to the form to prevent it from becoming too wide */
-        display: flex;
-        flex-direction: column;
-        /* Display form elements vertically */
-        align-items: center;
-        /* Center form elements horizontally */
-        padding: 20px;
-        /* Add padding to the form container */
-        box-sizing: border-box;
-        /* Include padding and border within the specified width */
-    }
-
-    .sign_up_input {
-        width: 100%;
-        /* Make the input fields flexible */
-        max-width: 100%;
-        /* Add a maximum width to prevent input fields from stretching too much */
-        padding: 12px;
-        margin-bottom: 20px;
-        font-size: 22px;
-        border-radius: 100px;
-        background: var(--silver, #CBCBCB);
-        box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset;
-        font-family: Montserrat;
-        outline: none;
-        border: none;
-        box-sizing: border-box;
-        /* Include padding and border within the specified width */
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        /* Add a smooth transition effect */
-    }
-
-    .sign_up_input:hover {
-        background-color: #FF5733;
-        /* Change the background color on hover */
-        box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
-        /* Add a glow effect on hover */
-    }
-
-    .sign_up_input:active {
-        background-color: rgba(224, 0, 0, 0.7);
-    }
-
-
-
-    .button_container {
-        width: 100%;
-        /* Set the width of the button container to 100% */
-        display: flex;
-        /* Use display: flex to create a flex container */
-        justify-content: flex-end;
-        /* Push the button to the right */
-        margin-top: 20px;
-        /* Add margin for spacing */
-    }
-
-
-    #login_button {
-        position: relative;
-        width: 100%;
-        padding: 15px;
-        align-items: center;
-        color: #ffffff;
-        background-color: #E00000;
-        font-size: 20px;
-        border: none;
-        appearance: none;
-        font-family: Montserrat;
-        border-radius: 100px;
-        margin-top: 60px;
-
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        /* Add a smooth transition effect */
-    }
-
-    #login_button:hover {
-        background-color: #FF5733;
-        /* Change the background color on hover */
-        box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
-        /* Add a glow effect on hover */
-    }
-
-    #login_button:active {
-        background-color: rgba(224, 0, 0, 0.7);
-        /* Change the background color when clicked */
-        box-shadow: 0px 0px 20px 0px rgba(224, 0, 0, 0.7);
-        /* Add a glow effect when clicked */
-    }
-
-
-
-    .create {
-        margin-left: 15px;
-        font-family: Montserrat, sans-serif;
-        font-size: 15px;
-        color: #CBCBCB;
-        justify-content: flex-start;
-        line-height: 0px;
-        display: flex;
-        gap: 10px;
-    }
-
-
-    .createa {
-        text-decoration: none;
-        color: #E00000;
-    }
-
-    @font-face {
-        font-family: "Out Of My League";
-        src: url("OutOfMyLeague.ttf") format("truetype");
-    }
-
 }
 
 
-@media (max-width: 637px) {
-    
-.Navbar {
-  display: flex;
-  flex-direction: row;
-  background-color: #cbcbcb;
-  width: 100%;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-top: 10px;
-  padding-bottom: 5px;
-  background: #cbcbcb;
-  box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
-  border-radius: 100px;
-
-}
-
-.Basics {
-  padding: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-  background: #cbcbcb;
-  color: #1b1a1a;
-  /*border: 4px #1b1a1a solid;
-  border-radius: 100px;*/
-  justify-content: center;
-  align-items: center;
-  font-size: 14px;
-  font-family: Montserrat;
-  font-weight: 400;
-  word-wrap: break-word;
-  text-align: center;
-}
-
-.login {
-  padding-left: 10px;
-  padding-right: 10px;
-  color: white;
-  font-size: 14px;
-  font-family: Montserrat;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 100px;
-  background-color: #e00000;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 
 .navbar_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    display: flex;
 }
 
 .notlogo {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
-.Basics,
 .login {
-  display: inline-block; /* Display them side by side */
-  margin-left: 10px; /* Add spacing between the elements */
+    display: inline-block;
+    /* Display them side by side */
+    margin-left: 10px;
+    /* Add spacing between the elements */
 }
 
 .logo {
-  flex: 1; /* Allow the logo to take up available space on the left */
+    flex: 1;
+    /* Allow the logo to take up available space on the left */
 }
 
-/* Your existing styles for the desktop view go here */
 
-/* Hamburger menu icon styling */
+
 .menu-button {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
+    display: none;
 }
 
-/* Media query for screens under 1000px */
-@media (max-width: 800px) {
-  .notlogo {
-    display: none; /* Hide the regular menu items */
-  }
 
-  .menu-button {
-    display: block; /* Show the hamburger menu icon */
-  }
 
-  /* Additional styles for the dropdown menu */
-  .notlogo.active {
+.login {
     display: block;
-    background: #cbcbcb;
-    position: absolute;
-    top: 64px;
-    left: 0;
-    right: 0;
-    flex-direction: column;
-  }
-
-  .Basics,
-  .login {
-    display: block; /* Display the menu items as a list */
+    /* Display the menu items as a list */
     margin: 5px 0;
-  }
-
-  .container {
-      width: 100%; /* Set the width to 100% to make it adapt to the screen width */
-      padding: 8px 16px; /* Adjust padding for smaller screens */
-  }
-
 }
-.Basicsah{
-  text-decoration: none;
-  color: #e00000;
+
+.container {
+    width: 100%;
+    /* Set the width to 100% to make it adapt to the screen width */
+    padding: 8px 16px;
+    /* Adjust padding for smaller screens */
 }
-.Basicsam{
-  text-decoration: none;
-  color: #1B1A1A;
+
+
+
+.Basicsah {
+text-decoration: none;
+color: #1B1A1A;
 }
-.Basicsaf{
-  text-decoration: none;
-  color: #1B1A1A;
+
+.Basicsam {
+text-decoration: none;
+color: #1B1A1A;
 }
-.Basicsap{
-  text-decoration: none;
-  color: #1B1A1A;
+
+.Basicsaf {
+text-decoration: none;
+color: #1B1A1A;
 }
-.Basicsaa{
-  text-decoration: none;
-  color: #1B1A1A;
+
+.Basicsap {
+text-decoration: none;
+color: #1B1A1A;
 }
-.logina{
-  text-decoration: none;
-  color: #1B1A1A;
+
+.Basicsaa {
+text-decoration: none;
+color: #1B1A1A;
 }
-    body {
-        background-color: #1B1A1A;
-        padding: 100px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        /* Center vertically */
-    }
 
-    .welcome_back_container {
-        display: flex;
-        /* Use display: flex to center the text and inputs vertically */
-        align-items: center;
-        /* Center vertically */
-        flex-direction: column;
-    }
+.logina {
 
-    .welcome_back {
-        height: fit-content;
-        color: var(--Orange-red, #E00000);
-        font-family: Out Of My League;
-        font-size: 110px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        margin-bottom: 50px;
-        margin-top: 50px;
-        text-align: center;
-    }
-
-    form {
-        width: 100%;
-        /* Make the form container flexible */
-        max-width: 600px;
-        /* Add a maximum width to the form to prevent it from becoming too wide */
-        display: flex;
-        flex-direction: column;
-        /* Display form elements vertically */
-        align-items: center;
-        /* Center form elements horizontally */
-        padding: 20px;
-        /* Add padding to the form container */
-        box-sizing: border-box;
-        /* Include padding and border within the specified width */
-    }
-
-    .sign_up_input {
-        width: 100%;
-        /* Make the input fields flexible */
-        max-width: 100%;
-        /* Add a maximum width to prevent input fields from stretching too much */
-        padding: 12px;
-        margin-bottom: 20px;
-        font-size: 18px;
-        border-radius: 100px;
-        background: var(--silver, #CBCBCB);
-        box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset;
-        font-family: Montserrat;
-        outline: none;
-        border: none;
-        box-sizing: border-box;
-        /* Include padding and border within the specified width */
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        /* Add a smooth transition effect */
-    }
-
-    .sign_up_input:hover {
-        background-color: #FF5733;
-        /* Change the background color on hover */
-        box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
-        /* Add a glow effect on hover */
-    }
-
-    .sign_up_input:active {
-        background-color: rgba(224, 0, 0, 0.7);
-    }
+text-decoration: none;
+color: #E00000;
+}
 
 
 
-    .button_container {
-        width: 100%;
-        /* Set the width of the button container to 100% */
-        display: flex;
-        /* Use display: flex to create a flex container */
-        justify-content: flex-end;
-        /* Push the button to the right */
-        margin-top: 20px;
-        /* Add margin for spacing */
-    }
+.login:hover {
+    animation: glow 1s infinite alternate;
+}
 
-
-    #login_button {
-        position: relative;
-        width: 100%;
-        padding: 12px;
-        align-items: center;
+@keyframes glow {
+    0% {
         color: #ffffff;
-        background-color: #E00000;
-        font-size: 15px;
-        border: none;
-        appearance: none;
-        font-family: Montserrat;
-        border-radius: 100px;
-        margin-top: 60px;
-
-        transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        /* Add a smooth transition effect */
+        text-shadow: 0 0 5px #e00000, 0 0 10px #e00000, 0 0 15px #e00000;
     }
 
-    #login_button:hover {
-        background-color: #FF5733;
-        /* Change the background color on hover */
-        box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
-        /* Add a glow effect on hover */
-    }
-
-    #login_button:active {
-        background-color: rgba(224, 0, 0, 0.7);
-        /* Change the background color when clicked */
-        box-shadow: 0px 0px 20px 0px rgba(224, 0, 0, 0.7);
-        /* Add a glow effect when clicked */
-    }
-
-
-    .create {
-        margin-left: 12px;
-        font-family: Montserrat, sans-serif;
-        font-size: 12px;
-        color: #CBCBCB;
-        justify-content: flex-start;
-        line-height: 0px;
-        display: flex;
-        gap: 10px;
-    }
-
-
-    .createa {
-        text-decoration: none;
-        color: #E00000;
-    }
-
-    @font-face {
-        font-family: "Out Of My League";
-        src: url("OutOfMyLeague.ttf") format("truetype");
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000;
     }
 }
+
+
+
+@media (max-width: 736px) {
+
+    .title {
+        font-size: 100px;
+    }
+
+    .Navbar {
+        display: flex;
+        flex-direction: row;
+        background-color: #cbcbcb;
+        width: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        background: #cbcbcb;
+        box-shadow: 0px 1px 20px rgba(224, 0, 0, 0.5);
+        border-radius: 100px;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+    .Basics {
+        padding: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 35px;
+        margin-right: 35px;
+        background: #cbcbcb;
+        color: #1b1a1a;
+        font-size: 12px;
+        font-family: Montserrat;
+        font-weight: 400;
+    }
+
+    .login {
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 30px;
+        color: white;
+        font-size: 14px;
+        font-family: Montserrat;
+        padding-bottom: 6px;
+        padding-top: 6px;
+        border-radius: 100px;
+        background-color: #1B1A1A;
+        cursor: pointer;
+        width: 70px;
+    }
+    
+
+    .navbar_container {
+        display: flex;
+    }
+
+    .logo {
+        flex: 1;
+        margin-top: -10px;
+    }
+
+    .menu-button {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .notlogo {
+        display: none;
+    }
+
+    .notlogo.active {
+        display: block;
+        background: #cbcbcb;
+        position: absolute;
+        top: 166.5px;
+        left: 127px;
+        right: 127px;
+        bottom: 177px;
+        flex-direction: column;
+        z-index: 2;
+    }
+
+    .Basics:hover a{
+        text-decoration: underline;
+        text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50) ;
+    }
+
+
+
+
+    .Basicsah {
+        text-decoration: none;
+        color: #1B1A1A;
+    }
+
+    .Basicsam {
+        text-decoration: none;
+        color: #1B1A1A;
+    }
+
+    .Basicsaf {
+        text-decoration: none;
+        color: #1B1A1A;
+    }
+
+    .Basicsap {
+        text-decoration: none;
+        color: #1B1A1A;
+    }
+
+    .Basicsaa {
+        text-decoration: none;
+        color: #1B1A1A;
+    }
+
+   
+    
+
+    .container {
+        width: 100%;
+        padding: 8px 16px;
+    }
+
+    .custom-select {
+        width: 100%;
+    }
+
+    .custom-select select {
+        padding: 8px 16px;
+    }
+
+    .custom-select .custom-arrow {
+        right: 5px;
+        width: 16px;
+        height: 16px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+
+    .title {
+        font-size: 140px;
+    }
+
+    .welcome_back{
+        font-size: 120px;
+    }
+}
+
+/* -----------------Navbar code ends here----------------- */

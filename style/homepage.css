@@ -332,6 +332,9 @@ body{
     animation-duration: 1.5s;
 }
 
+.mySlides.fade img {
+    border-radius: 50px;
+}
 
 footer .cr-con {
     background-color: #232127;

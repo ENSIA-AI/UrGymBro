@@ -122,8 +122,8 @@ nav {
 }
 
 /* <================= HERO SECTION =================> */
-body{
-    background: linear-gradient(137deg, rgba(2,0,36,1) 0%, rgba(68,2,20,1) 46%, rgba(224,0,0,1) 100%); 
+body {
+    background: linear-gradient(137deg, rgba(2, 0, 36, 1) 0%, rgba(68, 2, 20, 1) 46%, rgba(224, 0, 0, 1) 100%);
     margin: 0px;
 }
 
@@ -192,11 +192,15 @@ body{
 
 /* <================= BIG ARROW =================> */
 @keyframes arrowAnimation {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0);
     }
+
     50% {
-        transform: translateY(-20px); /* Adjust the distance the arrow moves up */
+        transform: translateY(-20px);
+        /* Adjust the distance the arrow moves up */
     }
 }
 
@@ -207,7 +211,8 @@ body{
     justify-content: center;
     align-content: center;
     margin-top: 100px;
-    animation: arrowAnimation 2s infinite; /* Adjust the duration as needed */
+    animation: arrowAnimation 2s infinite;
+    /* Adjust the duration as needed */
 }
 
 /* <================= OUR SERVICES =================> */
@@ -216,11 +221,11 @@ body{
     margin-bottom: 50px;
     color: white;
     font-size: 100px;
-    font-family: Montserrat;    
+    font-family: Montserrat;
     font-weight: 400;
     word-wrap: break-word;
     text-align: center;
-    text-shadow: 0px 7px 11px rgba(0,0,0,0.89);
+    text-shadow: 0px 7px 11px rgba(0, 0, 0, 0.89);
 }
 
 /* <================= SLIDE SHOW SECTION =================> */
@@ -348,13 +353,6 @@ body{
 }
 
 
-footer .cr-con {
-    background-color: #232127;
-    color: white;
-    padding: 1rem 4rem;
-    text-align: center;
-}
-
 @keyframes fade {
     from {
         opacity: .4
@@ -375,45 +373,45 @@ footer .cr-con {
 footer {
     background-color: rgb(255, 255, 255);
     background-image: url("../images/footer_background.jpg");
-    font-family: Montserrat;    
+    font-family: Montserrat;
 }
 
-.footer{
+.footer {
     padding: 70px 0;
 }
 
-.containerFooter{
+.containerFooter {
     max-width: 1170px;
     margin: auto;
 }
 
-ul{
+ul {
     list-style: none;
     padding-left: 0px;
 }
 
-.rowFooter{
+.rowFooter {
     display: flex;
     flex-wrap: wrap;
 }
 
-.footerCol{
+.footerCol {
     width: 25%;
     padding: 0 15px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.footerCol h4{
+.footerCol h4 {
     font-size: 18px;
-    color:#ffffff;
+    color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 600;
     position: relative;
 }
 
-.footerCol h4::before{
+.footerCol h4::before {
     content: '';
     position: absolute;
     left: 0;
@@ -437,8 +435,8 @@ ul{
     transition: all 0.3s ease;
 }
 
-.footerCol ul li a:hover{
-    color:#ffffff;
+.footerCol ul li a:hover {
+    color: #ffffff;
     padding-left: 10px;
     font-weight: 600;
 }
@@ -470,6 +468,22 @@ ul{
 .footerCol p {
     color: white;
     font-size: 12px;
+}
+
+.wrapper {
+    margin-bottom: 10px;
+}
+
+.description {
+    color: white;
+    display: block;
+}
+
+footer .cr-con {
+    background-color: #232127;
+    color: white;
+    padding: 1rem 4rem;
+    text-align: center;
 }
 
 @media(max-width: 767px) {
@@ -506,7 +520,7 @@ ul{
         margin-bottom: 20px;
     }
 
-    .Herosection img{ 
+    .Herosection img {
         margin-bottom: 20px;
     }
 
@@ -517,12 +531,12 @@ ul{
         margin-left: 0px;
     }
 
-    a { 
+    a {
         display: flex;
         justify-content: center;
         align-content: center
     }
-    
+
     .bigArrowContainer {
         width: 100%;
         cursor: pointer;
@@ -530,7 +544,7 @@ ul{
         justify-self: center;
         align-self: center;
         margin-top: 100px;
-        animation: arrowAnimation 2s infinite; 
+        animation: arrowAnimation 2s infinite;
     }
 
     .bigArrow {
@@ -548,7 +562,7 @@ ul{
         align-content: center;
     }
 
-    .slogan p{
+    .slogan p {
         font-size: 25px;
         text-align: center;
     }
@@ -559,17 +573,12 @@ ul{
         background-image: url("../images/footer_background.jpg");
     }
 
-    @font-face {
-        font-family: "Out of my league";
-        src: url("fonts/OutOfMyLeague.ttf") format("truetype");
-    }
-
     * {
         box-sizing: border-box
     }
 
 
-    .ourServices{
+    .ourServices {
         font-size: 70px;
     }
 

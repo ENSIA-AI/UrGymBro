@@ -33,7 +33,14 @@ body{
     align-items: center;
 }
 
-select {
+.custom-select {
+    position: relative;
+    display: inline-block;
+    width: 600px;
+}
+
+.custom-select select {
+    max-width: 600px;
     width: 100%;
     padding: 12px 36px;
     border: none;
@@ -48,8 +55,7 @@ select {
     appearance: none;
 }
 
-
-.custom-arrow {
+.custom-select .custom-arrow {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -69,6 +75,15 @@ select {
     color: white;
 }
 
+
+.text {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    color: white;
+}
 
 #results {
     display: flex;

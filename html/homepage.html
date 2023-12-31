@@ -13,13 +13,13 @@
         <label class="logo"><img src="../images/Property Black.svg" width="100px" /></label>
         <button class="menu-button">&#9776;</button>
         <ul class="nav-list" id="navbarList">
-            <li class="nav-item"><a href="#">HOME</a></li>
-            <li class="nav-item"><a href="../html/maps.html">MAPS
+            <li class="nav-item"><a id="home" href="#">HOME</a></li>
+            <li class="nav-item"><a id="maps" href="../html/maps.html">MAPS
                 </a></li>
-            <li class="nav-item"><a href="../html/products.html">PRODUCTS</a></li>
-            <li class="nav-item"><a href="../html/Food.html">FOOD</a></li>
-            <li class="nav-item"><a href="../html/aboutus.html">ABOUT US </a></li>
-            <li class="nav-item"><a href="../html/Login_Page_webdev.html">LOG IN </a></li>
+            <li class="nav-item"><a id="products" href="../html/products.html">PRODUCTS</a></li>
+            <li class="nav-item"><a id="food" href="../html/Food.html">FOOD</a></li>
+            <li class="nav-item"><a id="aboutus" href="../html/About_Us_webdev.html">ABOUT US </a></li>
+            <li class="nav-item"><a id="login" href="../html/Login_Page_webdev.html">LOG IN </a></li>
         </ul>
     </nav>
 
@@ -86,9 +86,9 @@
                     <h4>Useful links</h4>
                     <ul>
                         <li><a href="#">Log in</a></li>
-                        <li><a href="#">Maps</a></li>
+                        <li><a href="../html/maps.html">Maps</a></li>
                         <li><a href="#">Foods</a></li>
-                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Products</a></li>
                     </ul>
                 </div>
                 <div class="footerCol">
@@ -102,12 +102,21 @@
                 </div>
                 <div class="footerCol">
                     <h4>Contact Us</h4>
-                    <ul>
-                        <li><a href="#">Watch</a></li>
-                        <li><a href="#">Bag</a></li>
-                        <li><a href="#">Shoes</a></li>
-                        <li><a href="#">Dresses</a></li>
-                    </ul>
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <label class="description" for="name">Email</label>
+                            <input type="text" name="name">
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <div class="input-data">
+                            <label class="description" for="name">Message</label>
+                            <textarea name="Message" id="message" cols=pixel_to rows="5"></textarea>
+                        </div>
+                    </div>
+                    <div class="submit">
+                        <input type="submit" name="submit" placeholder="Submit">
+                    </div>
                 </div>
             </div>
         </div>

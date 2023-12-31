@@ -333,7 +333,7 @@ nav {
     }
 
     .title {
-        font-size: 140px;
+        font-size: 60px;
     }
 
     .container {
@@ -487,83 +487,4 @@ footer .cr-con {
     .footerCol {
         width: 100%;
     }
-}
-
-@media (max-width: 800px) {
-    * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-        list-style: none;
-        text-decoration: none;
-    }
-
-    .Herosection {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }
-
-    .Herosection img {
-        margin-bottom: 20px;
-    }
-
-    .joinbutton {
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        margin-left: 0px;
-    }
-
-    a {
-        display: flex;
-        justify-content: center;
-        align-content: center
-    }
-
-    .bigArrowContainer {
-        width: 100%;
-        cursor: pointer;
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        margin-top: 100px;
-        animation: arrowAnimation 2s infinite;
-    }
-
-    .bigArrow {
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        width: 100%;
-
-    }
-
-    .slogan {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .slogan p {
-        font-size: 25px;
-        text-align: center;
-    }
-
-
-    footer {
-        background-color: rgb(255, 255, 255);
-        background-image: url("../images/footer_background.jpg");
-    }
-
-    .ourServices {
-        font-size: 70px;
-    }
-
 }

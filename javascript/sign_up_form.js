@@ -10,10 +10,10 @@ var button = document.getElementById("sign_up_button");
 var message = document.createElement("div");
 message.innerHTML = "please fill this box before you go on!";
 message.style.cssText =
-  "display:inline;position: relative;left:30vw;top:3vw;margin-top:1vw;font-size: 1vw;color:red;text-align:left;";
+  "display:block;margin-top:10px;font-size: 16px;color:white;text-align:center;font-weight:800;";
 custom_message = document.createElement("div");
 custom_message.style.cssText =
-  "display:inline;position: relative;left:30vw;top:3vw;margin-top:1vw;font-size: 1vw;color:red;text-align:left;";
+  "display:block;margin-top:10px;font-size: 16px;color:white;text-align:center;font-weight:800;";
 
 error_messages = [
   "username is not valid",

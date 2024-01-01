@@ -6,8 +6,8 @@
     margin: 0px;
 }
 
-body{
-    background: linear-gradient(137deg, rgba(2,0,36,1) 0%, rgba(68,2,20,1) 46%, rgba(224,0,0,1) 100%); 
+body {
+    background: linear-gradient(137deg, rgba(2, 0, 36, 1) 0%, rgba(68, 2, 20, 1) 46%, rgba(224, 0, 0, 1) 100%);
     margin: 0px;
 }
 
@@ -17,11 +17,11 @@ body{
     margin-bottom: 50px;
     color: white;
     font-size: 100px;
-    font-family: Montserrat;    
+    font-family: Montserrat;
     font-weight: 400;
     word-wrap: break-word;
     text-align: center;
-    text-shadow: 0px 7px 11px rgba(0,0,0,0.89);
+    text-shadow: 0px 7px 11px rgba(0, 0, 0, 0.89);
 }
 
 .research-bar {
@@ -135,15 +135,15 @@ body{
 }
 
 .custom-select select:hover {
-    background-color: #b8b8b8; 
+    background-color: #b8b8b8;
 }
 
 .custom-select select:active {
-    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset; 
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset;
 }
 
 .container:hover {
-    background-color: #b8b8b8; 
+    background-color: #b8b8b8;
 }
 
 /* <================= NAVBAR CODE =================> */
@@ -266,51 +266,49 @@ footer {
     margin-top: 50px;
 }
 
-
-/* <================= FOOTER =================> */
-
+/* <================= FOOTER CODE =================> */
 footer {
     background-color: rgb(255, 255, 255);
     background-image: url("../images/footer_background.jpg");
-    font-family: Montserrat;    
+    font-family: Montserrat;
 }
 
-.footer{
+.footer {
     padding: 70px 0;
 }
 
-.containerFooter{
+.containerFooter {
     max-width: 1170px;
     margin: auto;
 }
 
-ul{
+ul {
     list-style: none;
     padding-left: 0px;
 }
 
-.rowFooter{
+.rowFooter {
     display: flex;
     flex-wrap: wrap;
 }
 
-.footerCol{
+.footerCol {
     width: 25%;
     padding: 0 15px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.footerCol h4{
+.footerCol h4 {
     font-size: 18px;
-    color:#ffffff;
+    color: #ffffff;
     text-transform: capitalize;
     margin-bottom: 30px;
     font-weight: 600;
     position: relative;
 }
 
-.footerCol h4::before{
+.footerCol h4::before {
     content: '';
     position: absolute;
     left: 0;
@@ -334,8 +332,8 @@ ul{
     transition: all 0.3s ease;
 }
 
-.footerCol ul li a:hover{
-    color:#ffffff;
+.footerCol ul li a:hover {
+    color: #ffffff;
     padding-left: 10px;
     font-weight: 600;
 }
@@ -371,6 +369,7 @@ ul{
 
 .wrapper {
     margin-bottom: 10px;
+
 }
 
 .description {
@@ -378,6 +377,49 @@ ul{
     display: block;
 }
 
+.input_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input_field {
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+}
+
+#message,
+#email {
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ffffff;
+    background: transparent;
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+#submit {
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ffffff;
+    background: transparent;
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
 footer .cr-con {
     background-color: #232127;
@@ -399,93 +441,4 @@ footer .cr-con {
     .footerCol {
         width: 100%;
     }
-}
-
-@media (max-width: 800px) {
-    * {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        outline: 0;
-        font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
-        list-style: none;
-        text-decoration: none;
-    }
-
-    .Herosection {
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        align-items: center;
-        margin-left: 0px;
-        margin-bottom: 20px;
-    }
-
-    .Herosection img{ 
-        margin-bottom: 20px;
-    }
-
-    .joinbutton {
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        margin-left: 0px;
-    }
-
-    a { 
-        display: flex;
-        justify-content: center;
-        align-content: center
-    }
-    
-    .bigArrowContainer {
-        width: 100%;
-        cursor: pointer;
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        margin-top: 100px;
-        animation: arrowAnimation 2s infinite; 
-    }
-
-    .bigArrow {
-        display: flex;
-        justify-self: center;
-        align-self: center;
-        width: 100%;
-
-    }
-
-    .slogan {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .slogan p{
-        font-size: 25px;
-        text-align: center;
-    }
-
-
-    footer {
-        background-color: rgb(255, 255, 255);
-        background-image: url("../images/footer_background.jpg");
-    }
-
-    @font-face {
-        font-family: "Out of my league";
-        src: url("fonts/OutOfMyLeague.ttf") format("truetype");
-    }
-
-    * {
-        box-sizing: border-box
-    }
-
-
-    .ourServices{
-        font-size: 70px;
-    }
-
 }

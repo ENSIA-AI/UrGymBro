@@ -163,19 +163,16 @@ form {
 
 .sign_up_input {
     width: 100%;
-    max-width: 100%;
-    padding: 12px;
-    margin-bottom: 20px;
-    font-size: 24px;
-    border-radius: 100px;
-    background: white;
-    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.50), 0px 16px 30px 0px rgba(0, 0, 0, 0.50) inset;
-    font-family: Montserrat;
-    outline: none;
+    padding: 10px;
+    margin: 10px;
     border: none;
-    box-sizing: border-box;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-}
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    font-family: Montserrat;
+    font-weight: 400;
+    box-shadow: 0px 7px 11px rgba(0, 0, 0, 0.89);
+  }
 
 .sign_up_input:hover {
     box-shadow: 0px 0px 20px 0px rgba(255, 255, 255, 0.7);
@@ -268,8 +265,7 @@ form {
     text-decoration: none;
 }
 
-/* <================= FOOTER =================> */
-
+/* <================= FOOTER CODE =================> */
 footer {
     background-color: rgb(255, 255, 255);
     background-image: url("../images/footer_background.jpg");
@@ -372,11 +368,56 @@ ul {
 
 .wrapper {
     margin-bottom: 10px;
+
 }
 
 .description {
     color: white;
     display: block;
+}
+
+.input_data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.input_field {
+    margin-bottom: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+}
+
+#message,
+#email {
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ffffff;
+    background: transparent;
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+}
+
+#submit {
+    margin-bottom: 10px;
+    width: 100%;
+    outline: none;
+    border: 1px solid #ffffff;
+    background: transparent;
+    padding: 5px 0;
+    color: white;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 footer .cr-con {
@@ -385,6 +426,7 @@ footer .cr-con {
     padding: 1rem 4rem;
     text-align: center;
 }
+
 
 @media(max-width: 767px) {
     .footerCol {

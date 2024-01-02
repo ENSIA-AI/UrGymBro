@@ -29,7 +29,6 @@ body {
 
 .title {
     padding-top: 100px;
-    margin-bottom: 50px;
     color: white;
     font-size: 100px;
     font-family: Montserrat;
@@ -37,7 +36,27 @@ body {
     word-wrap: break-word;
     text-align: center;
     text-shadow: 0px 7px 11px rgba(0, 0, 0, 0.89);
+
+    @media screen and (max-width: 500px) {
+        font-size: 70px;
+    }
 }
+
+.subtitle {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 24px;
+    font-family: Montserrat;
+    font-weight: 400;
+    word-wrap: break-word;
+    text-align: center;
+    text-shadow: 0px 7px 11px rgba(0, 0, 0, 0.89);
+
+    @media screen and (max-width: 500px) {
+        font-size: 20px;
+    }
+}
+
 
 .content {
     padding: 10px;
@@ -59,6 +78,7 @@ body {
     font-family: Montserrat;
     line-height: 30px;
     border: 3px solid white;
+    border-radius: 50px;
 }
 
 .section {
@@ -69,18 +89,6 @@ body {
     align-items: center;
     gap: 30px;
     padding: 30px;
-}
-
-.title {
-    padding-top: 100px;
-    margin-bottom: 50px;
-    color: white;
-    font-size: 100px;
-    font-family: Montserrat;
-    font-weight: 400;
-    word-wrap: break-word;
-    text-align: center;
-    text-shadow: 0px 7px 11px rgba(0, 0, 0, 0.89);
 }
 
 .content {
@@ -112,9 +120,7 @@ body {
 }
 
 .all-profiles {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
+    transition: transform 0.5s ease-in-out;
 }
 
 .profile {
@@ -123,20 +129,38 @@ body {
     padding: 30px;
     margin: 20px;
     background: white;
-    box-shadow: 0px 16px 30px rgba(0, 0, 0, 0.50) inset;
     border-radius: 50px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 30px;
     display: inline-flex;
+    box-shadow:
+        1.6px 1.6px 1.2px rgba(0, 0, 0, 0.015),
+        3.4px 3.4px 2.7px rgba(0, 0, 0, 0.022),
+        5.8px 5.8px 4.6px rgba(0, 0, 0, 0.027),
+        8.7px 8.7px 6.9px rgba(0, 0, 0, 0.031),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+        17.7px 17.7px 14.2px rgba(0, 0, 0, 0.039),
+        25.1px 25.1px 20.1px rgba(0, 0, 0, 0.043),
+        36.5px 36.5px 29.2px rgba(0, 0, 0, 0.048),
+        56.3px 56.3px 45px rgba(0, 0, 0, 0.055),
+        100px 100px 80px rgba(0, 0, 0, 0.07);
+    transition: transform 0.5s ease-in-out;
 }
 
-.image {
+.image-member {
     max-width: 150px;
     width: 100%;
     max-height: 150px;
     height: 100%;
+    filter: drop-shadow(0px 0px 68px rgba(224, 0, 0, 1));
+    transition: all 0.5s ease;
+}
+
+.image-member:hover {
+    filter: drop-shadow(0px 0px 68px rgba(224, 0, 0, 1)) brightness(1.2);
+    transform: scale(1.1);
 }
 
 .info {
@@ -167,24 +191,36 @@ body {
 
 .icons {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
-.icon {
-    max-width: 51.20px;
-    width: 100%;
-    max-height: 50px;
-    height: 100%;
-    margin: 5px;
+.icon a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: #24262b20;
+    margin-right: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50px;
+    color: #1B1A1A;
+    transition: all 0.5s ease;
+
 }
 
-#email {
-    position: relative;
-    top: 5px;
+.icon a:hover {
+    color: #E00000;
+    background-color: #24262b50;
+    scale: 1.2;
 }
 
+.icon a:active {
+    color: #6d0000;
+    background-color: #24262b70;
+}
 
 #Maya,
 #Iheb,
@@ -192,9 +228,44 @@ body {
     display: none;
 }
 
-.arrow {
+.arrow-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #24262b50;
+    border-radius: 50%;
     cursor: pointer;
+    margin: 10px;
 }
+
+.arrow-circle {
+    color: #fff;
+    font-size: 20px;
+}
+
+.arrow-container {
+    transition: all 0.5s ease;
+    /* Apply transition to the normal state */
+
+    &:hover {
+        background-color: white;
+        transform: scale(1.2);
+        /* Use transform for scaling */
+
+        .arrow-circle {
+            color: #e00000;
+        }
+    }
+}
+
+.arrow-container:active {
+    .arrow-circle {
+        color: #6d0000;
+    }
+}
+
 
 
 

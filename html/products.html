@@ -7,6 +7,12 @@
 </head>
 
 <body>
+
+  <!-- MAKE SURE THAT THE ONLY SHOW MORE THAT
+  HAS COONTENT IS THE FIRST ONE
+  NEED TO ADD .JS FILE TO FETCH DATA FROM THE MAIN 
+  HTML AND LATER FROM THE DATABASE (BACKEND) -->
+
   <nav>
     <label class="logo"><a href="../html/homepage.html"><img src="../images/Property Black.svg"
           width="100px" /></a></label>
@@ -23,7 +29,8 @@
   </nav>
 
   <div class="top_div">
-    <div class="title">Our Products</div>
+    <div class="title">Products</div>
+    <div class="subtitle">An amazing collection of items to enhance your workout !</div>
 
     <div class="filters">
       <div class="filter_text">Filters:</div>
@@ -50,6 +57,7 @@
 
   <div class="products">
 
+    <!-- ==================================================== HERE STARTS THE CODE OF THE ITEMS ==================================================== -->
     <div class="product" id="product1">
       <img src="../images/dumbell.jpg" id="product1_img" class="product_img" />
       <div class="text">
@@ -57,8 +65,11 @@
         <div id="product1_price" class="product_price">Price: 5000 DA</div>
         <div class="product_description" id="product1_description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua </div>
-        <input type="button" class="add_to_kart" id="add_to_kart1" value="Add To Cart" />
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <input type="button" class="popup-button" id="popup-button1" data-product-number="1" value="Show More..." />
       </div>
     </div>
 
@@ -69,8 +80,11 @@
         <div class="product_price" id="product2_price">Price: 5000 DA</div>
         <div class="product_description" id="product2_description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua </div>
-        <input type="button" class="add_to_kart" id="add_to_kart2" value="Add To Cart" />
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <input type="button" class="popup-button" id="popup-button2" data-product-number="2" value="Show More..." />
       </div>
     </div>
 
@@ -81,8 +95,11 @@
         <div class="product_price" id="product3_price">Price: 5000 DA</div>
         <div class="product_description" id="product3_description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua </div>
-        <input type="button" class="add_to_kart" id="add_to_kart3" value="Add To Cart" />
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <input type="button" class="popup-button" id="popup-button3" data-product-number="3" value="Show More..." />
       </div>
     </div>
 
@@ -93,8 +110,11 @@
         <div class="product_price" id="product4_price">Price: 5000 DA</div>
         <div class="product_description" id="product4_description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua </div>
-        <input type="button" class="add_to_kart" id="add_to_kart4" value="Add To Cart" />
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <input type="button" class="popup-button" id="popup-button4" data-product-number="4" value="Show More..." />
       </div>
     </div>
 
@@ -105,8 +125,11 @@
         <div class="product_price" id="product5_price">Price: 5000 DA</div>
         <div class="product_description" id="product5_description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua </div>
-        <input type="button" class="add_to_kart" id="add_to_kart5" value="Add To Cart" />
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <input type="button" class="popup-button" id="popup-button5" data-product-number="5" value="Show More..." />
       </div>
     </div>
 
@@ -117,20 +140,26 @@
         <div class="product_price" id="product6_price">Price: 5000 DA</div>
         <div class="product_description" id="product6_description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua </div>
-        <input type="button" class="add_to_kart" id="add_to_kart6" value="Add To Cart" />
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <input type="button" class="popup-button" id="popup-button6" data-product-number="6" value="Show More..." />
       </div>
     </div>
 
     <div class="product" id="product7">
-      <img src="../images/dumbell.jpg" id="product7_img" class="product_img" />
+      <img src="../images/dumbell.jpg" id="product6_img" class="product_img" />
       <div class="text">
         <div id="product7_name" class="product_name">Product Name</div>
         <div class="product_price" id="product7_price">Price: 5000 DA</div>
-        <div class="product_description" id="product7_description">
-          Sed ut perspiciatis unde
-        </div>
-        <input type="button" class="add_to_kart" id="add_to_kart7" value="Add To Cart" />
+        <div class="product_description" id="product6_description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <input type="button" class="popup-button" id="popup-button6" data-product-number="7" value="Show More..." />
       </div>
     </div>
 
@@ -141,8 +170,11 @@
         <div class="product_price" id="product8_price">Price: 5000 DA</div>
         <div class="product_description" id="product8_description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua </div>
-        <input type="button" class="add_to_kart" id="add_to_kart8" value="Add To Cart" />
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <input type="button" class="popup-button" id="popup-button8" data-product-number="8" value="Show More..." />
       </div>
     </div>
 
@@ -152,12 +184,100 @@
         <div id="product9_name" class="product_name">Product Name</div>
         <div class="product_price" id="product9_price">Price: 5000 DA</div>
         <div class="product_description" id="product9_description">
-          "Sed ut perspiciatis unde omnis iste n
-        </div>
-        <input type="button" class="add_to_kart" id="add_to_kart9" value="Add To Cart" />
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. </div>
+        <input type="button" class="popup-button" id="popup-button9" data-product-number="9" value="Show More..." />
       </div>
     </div>
   </div>
+
+  <!-- ==================================================== HERE ENDS THE CODE OF THE ITEMS ==================================================== -->
+
+
+  <!-- ==================================================== HERE STARTS THE CODE OF THE POPUPS ==================================================== -->
+
+
+  <div class="popup" id="popup1">
+    <div class="popup-content">
+      <img src="../images/dumbell.jpg" id="product1_img" class="product_img" />
+      <span class="close-btn" onclick="hidePopup(1)">&times;</span>
+      <div class="text">
+        <div id="product1_name" class="product_name">Product Name</div>
+        <div id="product1_price" class="product_price">Price: 5000 DA</div>
+        <div class="product_description" id="product1_description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum. magna aliqua </div>
+        <div class="get-it-from-title"> Get it from</div>
+        <div class="link"><a class="links" href="https://www.hammer-fitness.at/at-en/hammer-kurzhantel-set-40kg-eisen.html">Iheb Boutique</a></div>
+        <div class="link"><a class="links" href="https://www.hammer-fitness.at/at-en/hammer-kurzhantel-set-40kg-eisen.html">Maya Boutique</a></div>
+        <div class="button-container"><input type="button" class="popup-button" id="popup-button1" data-product-number="1" value="Add to Savings" /></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="popup" id="popup2">
+    <div class="popup-content">
+      <span class="close-btn" onclick="hidePopup(2)">&times;</span>
+      <!-- Add your popup content here -->
+    </div>
+  </div>
+
+  <div class="popup" id="popup3">
+    <div class="popup-content">
+      <span class="close-btn" onclick="hidePopup(3)">&times;</span>
+      <!-- Add your popup content here -->
+    </div>
+  </div>
+
+  <div class="popup" id="popup4">
+    <div class="popup-content">
+      <span class="close-btn" onclick="hidePopup(4)">&times;</span>
+      <!-- Add your popup content here -->
+    </div>
+  </div>
+
+  <div class="popup" id="popup5">
+    <div class="popup-content">
+      <span class="close-btn" onclick="hidePopup(5)">&times;</span>
+      <!-- Add your popup content here -->
+    </div>
+  </div>
+
+  <div class="popup" id="popup6">
+    <div class="popup-content">
+      <span class="close-btn" onclick="hidePopup(6)">&times;</span>
+      <!-- Add your popup content here -->
+    </div>
+  </div>
+
+  <div class="popup" id="popup7">
+    <div class="popup-content">
+      <span class="close-btn" onclick="hidePopup(7)">&times;</span>
+      <!-- Add your popup content here -->
+    </div>
+  </div>
+
+  <div class="popup" id="popup8">
+    <div class="popup-content">
+      <span class="close-btn" onclick="hidePopup(8)">&times;</span>
+      <!-- Add your popup content here -->
+    </div>
+  </div>
+
+  <div class="popup" id="popup9">
+    <div class="popup-content">
+      <span class="close-btn" onclick="hidePopup(9)">&times;</span>
+      <!-- Add your popup content here -->
+    </div>
+  </div>
+
+  <!-- ==================================================== HERE ENDS THE CODE OF THE POPUPS ==================================================== -->
 
   <div class="product_navigation">
     <input type="button" class="nav" id="nav1" value="1" />
@@ -216,14 +336,13 @@
 
 </body>
 
+<script src="../javascript/popup.js"></script>
+<script src="../javascript/text-limit.js"></script>
 <script src="../javascript/Product Name_products_page.js"></script>
 <script src="../javascript/product.js"></script>
 <script src="../javascript/navbar.js"></script>
-<script src="../javascript/wilaya-baladia-script.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script src="../javascript/go_to_top.js"></script>
-
-
 
 </html>

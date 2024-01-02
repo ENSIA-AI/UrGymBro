@@ -1,126 +1,34 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const menuButton = document.querySelector(".menu-button")
-    const menuOptions = document.querySelector(".nav-list")
+document.addEventListener('DOMContentLoaded', function () {
+    const lyes = document.getElementById('Lyes');
+    const maya = document.getElementById('Maya');
+    const iheb = document.getElementById('Iheb');
+    const maissa = document.getElementById('Maissa');
   
-    menuButton.addEventListener("click", function () {
-        menuOptions.classList.toggle("active");
-    });
+    const leftArrow = document.getElementById('left-arrow-container');
+    const rightArrow = document.getElementById('right-arrow-container');
   
-    document.addEventListener("click", function (event) {
-        if (!menuOptions.contains(event.target) && event.target !== menuButton) {
-            menuOptions.classList.remove("active");
-        }
-    });
+    const profiles = [lyes, maya, iheb, maissa];
+  
+    let currentProfileIndex = 0;
+  
+    function showProfile(index) {
+      profiles.forEach(profile => profile.style.display = 'none');
+      profiles[index].style.display = 'flex';
+    }
+  
+    function nextProfile() {
+      currentProfileIndex = (currentProfileIndex + 1) % profiles.length;
+      showProfile(currentProfileIndex);
+    }
+  
+    function prevProfile() {
+      currentProfileIndex = (currentProfileIndex - 1 + profiles.length) % profiles.length;
+      showProfile(currentProfileIndex);
+    }
+  
+    leftArrow.addEventListener('click', prevProfile);
+    rightArrow.addEventListener('click', nextProfile);
+  
+    showProfile(currentProfileIndex);
   });
   
-  
-  particlesJS("particles-js", {
-    "particles": {
-      "number": {
-        "value": 33,
-        "density": {
-          "enable": true,
-          "value_area": 1420.4657549380909
-        }
-      },
-      "color": {
-        "value": "#ffffff"
-      },
-      "shape": {
-        "type": "triangle",
-        "stroke": {
-          "width": 0,
-          "color": "#000000"
-        },
-        "polygon": {
-          "nb_sides": 5
-        },
-        "image": {
-          "src": "img/github.svg",
-          "width": 100,
-          "height": 100
-        }
-      },
-      "opacity": {
-        "value": 0.06313181133058181,
-        "random": false,
-        "anim": {
-          "enable": false,
-          "speed": 1,
-          "opacity_min": 0.1,
-          "sync": false
-        }
-      },
-      "size": {
-        "value": 11.83721462448409,
-        "random": true,
-        "anim": {
-          "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
-          "sync": false
-        }
-      },
-      "line_linked": {
-        "enable": true,
-        "distance": 150,
-        "color": "#ffffff",
-        "opacity": 0.4,
-        "width": 1
-      },
-      "move": {
-        "enable": true,
-        "speed": 6,
-        "direction": "none",
-        "random": false,
-        "straight": false,
-        "out_mode": "out",
-        "bounce": false,
-        "attract": {
-          "enable": false,
-          "rotateX": 600,
-          "rotateY": 1200
-        }
-      }
-    },
-    "interactivity": {
-      "detect_on": "canvas",
-      "events": {
-        "onhover": {
-          "enable": true,
-          "mode": "repulse"
-        },
-        "onclick": {
-          "enable": true,
-          "mode": "push"
-        },
-        "resize": true
-      },
-      "modes": {
-        "grab": {
-          "distance": 400,
-          "line_linked": {
-            "opacity": 1
-          }
-        },
-        "bubble": {
-          "distance": 400,
-          "size": 40,
-          "duration": 2,
-          "opacity": 8,
-          "speed": 3
-        },
-        "repulse": {
-          "distance": 200,
-          "duration": 0.4
-        },
-        "push": {
-          "particles_nb": 4
-        },
-        "remove": {
-          "particles_nb": 2
-        }
-      }
-    },
-    "retina_detect": true
-  });

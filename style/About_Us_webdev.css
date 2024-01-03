@@ -116,12 +116,9 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 1px;
 }
 
-.all-profiles {
-    transition: transform 0.5s ease-in-out;
-}
 
 .profile {
     width: 320px;
@@ -147,6 +144,11 @@ body {
         56.3px 56.3px 45px rgba(0, 0, 0, 0.055),
         100px 100px 80px rgba(0, 0, 0, 0.07);
     transition: transform 0.5s ease-in-out;
+    @media screen and (max-width: 500px) {
+        margin: 1px;
+        width: 100%;
+        height: auto;
+    }
 }
 
 .image-member {
@@ -237,7 +239,7 @@ body {
     background-color: #24262b50;
     border-radius: 50%;
     cursor: pointer;
-    margin: 10px;
+    margin: 1px;
 }
 
 .arrow-circle {
@@ -247,12 +249,10 @@ body {
 
 .arrow-container {
     transition: all 0.5s ease;
-    /* Apply transition to the normal state */
 
     &:hover {
         background-color: white;
         transform: scale(1.2);
-        /* Use transform for scaling */
 
         .arrow-circle {
             color: #e00000;
@@ -265,9 +265,6 @@ body {
         color: #6d0000;
     }
 }
-
-
-
 
 /* <================= NAVBAR CODE =================> */
 nav {

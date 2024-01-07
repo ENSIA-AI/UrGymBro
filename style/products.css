@@ -286,6 +286,7 @@ label {
   max-width: 280px;
   height: auto;
   overflow: hidden;           
+
   color: #1B1A1A;             
   font-weight: 400;           
   margin: 10px 0;             
@@ -293,7 +294,7 @@ label {
 
 .product .product_description.truncate {
   white-space: nowrap;        
-  overflow: hidden;           
+  overflow: hidden;     
   text-overflow: ellipsis;    
 }
 
@@ -562,7 +563,6 @@ footer .cr-con {
   border-radius: 20px;
   width: 600px;
 }
-
 .popup-content img {
   margin-top: 25px;
   width: auto;

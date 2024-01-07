@@ -1,277 +1,83 @@
-let _button1 = document.getElementById("popup-button1");
-let _button2 = document.getElementById("popup-button2");
-let _button3 = document.getElementById("popup-button3");
-let _button4 = document.getElementById("popup-button4");
-let _button5 = document.getElementById("popup-button5");
-let _button6 = document.getElementById("popup-button6");
-let _button7 = document.getElementById("popup-button7");
-let _button8 = document.getElementById("popup-button8");
-let _button9 = document.getElementById("popup-button9");
-var names = [];
-var prices = [];
-var descriptions = [];
-var images = [];
-console.log();
-for (i = 1; i <= 9; i++) {
-  let p = document.getElementById("product" + i + "_name").innerHTML;
-  names.push(p);
-  let c = document.getElementById("product" + i + "_price").innerHTML;
-  prices.push(c);
-  let k = document.getElementById("product" + i + "_description").innerHTML;
-  descriptions.push(k);
-  let l = document.getElementById("product" + i + "_img").src;
-  console.log(l)
-  images.push(l);
+function showPopup() {
+  var popup = document.getElementById("popup1");
+  popup.style.display = "block";
 }
-_button1.addEventListener("click", function () {
-  all_products = window.open("specific_product.html");
 
-  all_products.onload = function () {
-    let c = all_products.document.getElementById("name");
-    c.innerHTML = names[0];
-    let k = all_products.document.getElementById("price");
-    k.innerHTML = prices[0];
-    let b = all_products.document.getElementById("p_img");
-    b.src= images[0];
-    let a = all_products.document.getElementById("description");
-    a.innerHTML = descriptions[0];
+// Function to hide the popup
+function hidePopup() {
+  var popup = document.getElementById("popup1");
+  popup.style.display = "none";
+}
 
-    let add=all_products.document.getElementById('add');
-    let save=all_products.document.getElementById('save');
-    add.addEventListener('click',function(){
-        all_products.alert("you have added this item to your kart");
-        
-    })
-  
-    save.addEventListener('click',function(){
-        all_products.alert("you have added this item to your savings");
+var img = document.querySelector(".popup-content #product1_img");
+var pname = document.querySelector(".popup-content #product1_name");
+var price = document.querySelector(".popup-content #product1_price");
+var description = document.querySelector(
+  ".popup-content #product1_description"
+);
 
-    })
+let p1 = document.getElementById("popup-button1");
+let p2 = document.getElementById("popup-button2");
+let p3 = document.getElementById("popup-button3");
+let p4 = document.getElementById("popup-button4");
+let p5 = document.getElementById("popup-button5");
+let p6 = document.getElementById("popup-button6");
+let p7 = document.getElementById("popup-button7");
+let p8 = document.getElementById("popup-button8");
+let p9 = document.getElementById("popup-button9");
 
-};
+function updateinfo(num) {
+  img.src = document.getElementById("product" + num + "_img").src;
+  description.innerHTML = document.getElementById(
+    "product" + num + "_description"
+  ).innerHTML;
+  pname.innerHTML = document.getElementById(
+    "product" + num + "_name"
+  ).innerHTML;
+  price.innerHTML = document.getElementById(
+    "product" + num + "_price"
+  ).innerHTML;
+}
+
+p1.addEventListener("click", function () {
+  updateinfo(1);
+  showPopup();
+});
+p2.addEventListener("click", function () {
+  updateinfo(2);
+  showPopup();
+});
+p3.addEventListener("click", function () {
+  updateinfo(3);
+  showPopup();
+});
+p4.addEventListener("click", function () {
+  updateinfo(4);
+  showPopup();
+});
+p5.addEventListener("click", function () {
+  updateinfo(5);
+  showPopup();
+});
+p6.addEventListener("click", function () {
+  updateinfo(6);
+  showPopup();
+});
+p7.addEventListener("click", function () {
+  updateinfo(7);
+  showPopup();
+});
+p8.addEventListener("click", function () {
+  updateinfo(8);
+  showPopup();
+});
+p9.addEventListener("click", function () {
+  updateinfo(9);
+  showPopup();
 });
 
-
-  _button2.addEventListener("click", function () {
-    all_products = window.open("specific_product.html");
-  
-    all_products.onload = function () {
-      let c = all_products.document.getElementById("name");
-      c.innerHTML = names[1];
-      let k = all_products.document.getElementById("price");
-      k.innerHTML = prices[1];
-      let b = all_products.document.getElementById("p_img");
-      b.src= images[1];
-      let a = all_products.document.getElementById("description");
-      a.innerHTML = descriptions[1];
-  
-      let add=all_products.document.getElementById('add');
-      let save=all_products.document.getElementById('save');
-      add.addEventListener('click',function(){
-          all_products.alert("you have added this item to your kart");
-          
-      })
-    
-      save.addEventListener('click',function(){
-          all_products.alert("you have added this item to your savings");
-  
-      })
-  
-  };
-  });
-
-  _button3.addEventListener("click", function () {
-    all_products = window.open("specific_product.html");
-  
-    all_products.onload = function () {
-      let c = all_products.document.getElementById("name");
-      c.innerHTML = names[2];
-      let k = all_products.document.getElementById("price");
-      k.innerHTML = prices[2];
-      let b = all_products.document.getElementById("p_img");
-      b.src= images[2];
-      let a = all_products.document.getElementById("description");
-      a.innerHTML = descriptions[2];
-  
-      let add=all_products.document.getElementById('add');
-      let save=all_products.document.getElementById('save');
-      add.addEventListener('click',function(){
-          all_products.alert("you have added this item to your kart");
-          
-      })
-    
-      save.addEventListener('click',function(){
-          all_products.alert("you have added this item to your savings");
-  
-      })
-  
-  };
-  });
-
-  _button4.addEventListener("click", function () {
-    all_products = window.open("specific_product.html");
-  
-    all_products.onload = function () {
-      let c = all_products.document.getElementById("name");
-      c.innerHTML = names[3];
-      let k = all_products.document.getElementById("price");
-      k.innerHTML = prices[3];
-      let b = all_products.document.getElementById("p_img");
-      b.src= images[3];
-      let a = all_products.document.getElementById("description");
-      a.innerHTML = descriptions[3];
-  
-      let add=all_products.document.getElementById('add');
-      let save=all_products.document.getElementById('save');
-      add.addEventListener('click',function(){
-          all_products.alert("you have added this item to your kart");
-          
-      })
-    
-      save.addEventListener('click',function(){
-          all_products.alert("you have added this item to your savings");
-  
-      })
-  
-  };
-  });
-
-  _button5.addEventListener("click", function () {
-    all_products = window.open("specific_product.html");
-  
-    all_products.onload = function () {
-      let c = all_products.document.getElementById("name");
-      c.innerHTML = names[4];
-      let k = all_products.document.getElementById("price");
-      k.innerHTML = prices[4];
-      let b = all_products.document.getElementById("p_img");
-      b.src= images[4];
-      let a = all_products.document.getElementById("description");
-      a.innerHTML = descriptions[4];
-  
-      let add=all_products.document.getElementById('add');
-      let save=all_products.document.getElementById('save');
-      add.addEventListener('click',function(){
-          all_products.alert("you have added this item to your kart");
-          
-      })
-    
-      save.addEventListener('click',function(){
-          all_products.alert("you have added this item to your savings");
-  
-      })
-  
-  };
-  });
-
-  _button6.addEventListener("click", function () {
-    all_products = window.open("specific_product.html");
-  
-    all_products.onload = function () {
-      let c = all_products.document.getElementById("name");
-      c.innerHTML = names[5];
-      let k = all_products.document.getElementById("price");
-      k.innerHTML = prices[5];
-      let b = all_products.document.getElementById("p_img");
-      b.src= images[5];
-      let a = all_products.document.getElementById("description");
-      a.innerHTML = descriptions[5];
-  
-      let add=all_products.document.getElementById('add');
-      let save=all_products.document.getElementById('save');
-      add.addEventListener('click',function(){
-          all_products.alert("you have added this item to your kart");
-          
-      })
-    
-      save.addEventListener('click',function(){
-          all_products.alert("you have added this item to your savings");
-  
-      })
-  
-  };
-  });
-
-  _button7.addEventListener("click", function () {
-    all_products = window.open("specific_product.html");
-  
-    all_products.onload = function () {
-      let c = all_products.document.getElementById("name");
-      c.innerHTML = names[6];
-      let k = all_products.document.getElementById("price");
-      k.innerHTML = prices[6];
-      let b = all_products.document.getElementById("p_img");
-      b.src= images[6];
-      let a = all_products.document.getElementById("description");
-      a.innerHTML = descriptions[6];
-  
-      let add=all_products.document.getElementById('add');
-      let save=all_products.document.getElementById('save');
-      add.addEventListener('click',function(){
-          all_products.alert("you have added this item to your kart");
-          
-      })
-    
-      save.addEventListener('click',function(){
-          all_products.alert("you have added this item to your savings");
-  
-      })
-  
-  };
-  });
-
-  _button8.addEventListener("click", function () {
-    all_products = window.open("specific_product.html");
-  
-    all_products.onload = function () {
-      let c = all_products.document.getElementById("name");
-      c.innerHTML = names[7];
-      let k = all_products.document.getElementById("price");
-      k.innerHTML = prices[7];
-      let b = all_products.document.getElementById("p_img");
-      b.src= images[7];
-      let a = all_products.document.getElementById("description");
-      a.innerHTML = descriptions[7];
-  
-      let add=all_products.document.getElementById('add');
-      let save=all_products.document.getElementById('save');
-      add.addEventListener('click',function(){
-          all_products.alert("you have added this item to your kart");
-          
-      })
-    
-      save.addEventListener('click',function(){
-          all_products.alert("you have added this item to your savings");
-  
-      })
-  
-  };
-  });
-
-  _button9.addEventListener("click", function () {
-    all_products = window.open("specific_product.html");
-  
-    all_products.onload = function () {
-      let c = all_products.document.getElementById("name");
-      c.innerHTML = names[8];
-      let k = all_products.document.getElementById("price");
-      k.innerHTML = prices[8];
-      let b = all_products.document.getElementById("p_img");
-      b.src= images[8];
-      let a = all_products.document.getElementById("description");
-      a.innerHTML = descriptions[8];
-  
-      let add=all_products.document.getElementById('add');
-      let save=all_products.document.getElementById('save');
-      add.addEventListener('click',function(){
-          all_products.alert("you have added this item to your kart");
-          
-      })
-    
-      save.addEventListener('click',function(){
-          all_products.alert("you have added this item to your savings");
-  
-      })
-  
-  };
-  });
+document.addEventListener("click", function (e) {
+  if (e.target.className == "popup") {
+    hidePopup();
+  }
+});

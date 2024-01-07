@@ -1,31 +1,26 @@
 // Function to show the popup
-function showPopup(productNumber) {
-  var popup = document.getElementById("popup" + productNumber);
+function showPopup() {
+  var popup = document.getElementById("popup1");
   popup.style.display = "block";
 }
 
 // Function to hide the popup
-function hidePopup(productNumber) {
-  var popup = document.getElementById("popup" + productNumber);
+function hidePopup() {
+  var popup = document.getElementById("popup1");
   popup.style.display = "none";
 }
 
 // Add event listeners
 document.addEventListener("DOMContentLoaded", function () {
-  var buttons = document.querySelectorAll(".popup-button");
-  var closeIcons = document.querySelectorAll(".popup-close");
+  closeIcon = document.getElementsByClassName("close-btn");
+  button = document.getElementsByClassName("popup-button");
 
-  buttons.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var productNumber = this.dataset.productNumber;
-      showPopup(productNumber);
-    });
+  button.addEventListener("click", function () {
+    console.log(100);
+    showPopup();
   });
 
-  closeIcons.forEach(function (closeIcon) {
-    closeIcon.addEventListener("click", function () {
-      var productNumber = this.dataset.productNumber;
-      hidePopup(productNumber);
-    });
+  closeIcon.addEventListener("click", function () {
+    hidePopup();
   });
 });

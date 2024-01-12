@@ -1,0 +1,782 @@
+@media (min-width: 1024px){
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #212121;
+    display: flex;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #131212;
+    padding: 20px;
+    color: white;
+    height: 61.5vw;
+}
+
+#profile-content {
+    display:flex ;
+    justify-content: space-evenly;
+
+}
+
+#profile-content span{
+   margin-top: 25px;
+   font-size: 18px;
+   text-align: center;
+   color: #bf0404c0;
+   text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+
+}
+
+
+#profil {
+    margin-top: 20px;
+    margin-left: 90px;
+    padding: 2px;
+    color: rgba(224, 0, 0, 0.662);
+    text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+    font-family: Out of my league;
+    font-size: 27px;
+    
+}
+
+
+
+#sidebar a {
+    display: block;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+
+#sidebar:hover{
+    box-shadow: 0px 16px 30px 0px rgba(245, 88, 88, 0.25) inset, 0px 16px 30px 0px rgba(224, 0, 0, 0.45);
+}
+
+
+#sd:hover {
+    background-color: #555;
+    color: rgba(224, 0, 0, 0.605);
+    cursor: pointer;
+    
+}
+#sd
+{
+    border-bottom: 1px solid #555;
+}
+
+
+#sidebar a:hover {
+    cursor: pointer;
+}
+
+.sidebar_elements
+{
+    margin-top: 30px;
+}
+
+
+
+
+    .profile_all {
+        display: flex;
+        background-color: #131212;
+        box-shadow: 0px 16px 30px 0px rgba(245, 88, 88, 0.176) inset, 0px 16px 30px 0px rgba(224, 0, 0, 0.185);
+        flex-direction: row;
+        align-items: stretch;
+        align-content: stretch;
+        position: relative;
+        top: 10px;
+        margin-bottom: 10vw;
+        left: 10vw;
+        width: 50vw;
+        height: 42vw;
+        align-items: center;
+
+    }
+
+   
+
+    .profile_text
+    {
+        margin-top: 5px;
+        margin-right: 2px;
+        margin-left: -90px;
+    }
+
+    .profile_text div{
+        color: var(--silver, #CBCBCB);
+        text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.877) ;
+        margin-top: 5px;
+        margin-left: 130px;
+        line-height: 3;
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        width: 250px;
+    }   
+    
+    .profile_txt div{
+        color: var(--silver, #CBCBCB);
+        margin-top: 7px;
+        margin-left: 55px;
+        line-height: 3;
+        font-size: 17px;
+        display: flex;
+        justify-content: center;
+        width: 250px;
+
+    } 
+     
+    .profile_txt{
+        margin-top: 5px;
+
+    }
+    
+    
+
+    .profile_txt div:hover #edit{
+        display:block;
+        margin-left: 220px;
+        margin-top: 1.7px;
+        height: 15px;
+        color: #ffffff; 
+        background-color: aqua;
+
+        position: absolute;
+        cursor: pointer;
+    }
+
+
+
+
+    #edit{
+        display: none;
+    } 
+    
+    
+
+
+    .profile_inputs input{
+        width: 180px;
+        height: 32px;
+        background-color: #131212;
+        color: #CBCBCB;
+        font-size: 15px;
+        border-color: rgba(224, 0, 0, 0.185);
+        margin-bottom: 15px;
+        
+    }
+ 
+     
+    
+    
+    .profile_inputs select{
+        width: 190px;
+        height: 34px;
+        background-color: #131212;
+        color: #CBCBCB;
+        font-size: 15px;
+        
+        margin-bottom: 15px;
+        border: 2px solid  rgba(224, 0, 0, 0.185);
+        
+    }
+
+    
+
+   .view-mode{
+      margin-left: 20px;
+   }
+
+
+
+
+    
+    .profile_inputs input:hover {
+        display: block;
+
+    }
+
+    #saveChanges{
+        position:relative;
+        margin-top: 480px;
+        margin-left: -150px;
+        color: #CBCBCB;
+        background-color: #131212;
+        font-size: 17px;
+        
+    }
+    #Disconnect{
+        position:relative;
+        margin-top: 0px;
+        margin-left: 0px;
+        color: #CBCBCB;
+        background-color: #943030;
+        font-size: 17px;
+    }
+    
+    .error-message{
+        color: red;
+        font-size: 10px;
+
+    }
+
+    #saveChanges:hover{
+        box-shadow: 0px 0px 10px rgba(224, 0, 0, 0.726);
+        cursor: pointer;
+        background-color: rgba(224, 0, 0, 0.662);
+        border: 2px solid rgba(224, 0, 0, 0.185);
+    }
+
+    #cancelChanges{
+        position:relative;
+        margin-top: 480px;
+        margin-left: 30px;
+        background-color: #CBCBCB;
+        border: 2px solid rgba(0, 0, 0, 0.185);
+        font-size: 17px;
+        
+    }
+    
+
+    #cancelChanges:hover{
+        box-shadow: 0px 0px 10px rgba(224, 0, 0, 0.726);
+        cursor: pointer;
+        color: #CBCBCB;
+        background-color: rgba(224, 0, 0, 0.662);
+    }
+
+@font-face{
+    font-family: "Out of my league";
+  src: url("fonts/OutOfMyLeague.ttf") 
+    format("truetype");
+  }
+
+ 
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 735px) and (max-width: 1023px){
+
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #212121;
+        display: flex;
+    }
+
+    #sidebar {
+        width: 250px;
+        background-color: #131212;
+        padding: 20px;
+        color: white;
+        height:71vw;
+    }
+    
+    #profile-content {
+        display:flex ;
+        justify-content: space-evenly;
+    
+    }
+    
+    #profile-content span{
+       margin-top: 25px;
+       font-size: 18px;
+       text-align: center;
+       color: #bf0404c0;
+       text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+    
+    }
+    
+    
+    #profil {
+        margin-top: 20px;
+        margin-left: 90px;
+        padding: 2px;
+        color: rgba(224, 0, 0, 0.662);
+        text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+        font-family: Out of my league;
+        font-size: 20px;
+        
+    }
+    
+    
+    
+    #sidebar a {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    
+    #sidebar:hover{
+        box-shadow: 0px 16px 30px 0px rgba(245, 88, 88, 0.25) inset, 0px 16px 30px 0px rgba(224, 0, 0, 0.45);
+    }
+    
+    
+    #sd:hover {
+        background-color: #555;
+        color: rgba(224, 0, 0, 0.605);
+        cursor: pointer;
+        
+    }
+    #sd
+    {
+        border-bottom: 1px solid #555;
+    }
+    
+    
+    #sidebar a:hover {
+        cursor: pointer;
+    }
+    
+    .sidebar_elements
+    {
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+        .profile_all {
+            display: flex;
+            background-color: #131212;
+            box-shadow: 0px 16px 30px 0px rgba(245, 88, 88, 0.176) inset, 0px 16px 30px 0px rgba(224, 0, 0, 0.185);
+            flex-direction: row;
+            align-items: stretch;
+            align-content: stretch;
+            position: relative;
+            top: 10px;
+            margin-bottom: 10vw;
+            left: 10vw;
+            width: 60vw;
+            height: 42vw;
+            align-items: center;
+            margin-right: 200px;
+    
+        }
+    
+       
+    
+        .profile_text
+        {
+            margin-top: 5px;
+            margin-right: 2px;
+            margin-left: -120px;
+        }
+    
+        .profile_text div{
+            color: var(--silver, #CBCBCB);
+            text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.877) ;
+            margin-top: 5px;
+            margin-left: 130px;
+            line-height: 3;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            width: 250px;
+        }   
+        
+        .profile_txt div{
+            color: var(--silver, #CBCBCB);
+            margin-top: 7px;
+            margin-left: 55px;
+            line-height: 3;
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            width: 250px;
+    
+        } 
+         
+        .profile_txt{
+            margin-top: 5px;
+        }
+        
+        
+    
+        .profile_txt div:hover #edit{
+            display:block;
+            margin-left: 220px;
+            margin-top: 1.7px;
+            height: 15px;
+            color: #ffffff; 
+            position: absolute;
+            cursor: pointer;
+        }
+    
+    
+    
+    
+        #edit{
+            display: none;
+        } 
+        
+        
+    
+    
+        .profile_inputs input{
+            width: 180px;
+            height: 32px;
+            background-color: #131212;
+            color: #CBCBCB;
+            font-size: 15px;
+            border-color: rgba(224, 0, 0, 0.185);
+            margin-bottom: 15px;
+            
+        }
+        
+        
+        .profile_inputs select{
+            width: 190px;
+            height: 34px;
+            background-color: #131212;
+            color: #CBCBCB;
+            font-size: 15px;
+            
+            margin-bottom: 15px;
+            border: 2px solid  rgba(224, 0, 0, 0.185);
+            
+        }
+    
+        
+    
+       .view-mode{
+          margin-left: 20px;
+       }
+    
+    
+    
+    
+        
+        .profile_inputs input:hover {
+            display: block;
+    
+        }
+    
+        #saveChanges{
+            position:relative;
+            margin-top: 480px;
+            margin-left: -150px;
+            color: #CBCBCB;
+            background-color: #131212;
+            font-size: 17px;
+            
+        }
+        
+    
+        #saveChanges:hover{
+            box-shadow: 0px 0px 10px rgba(224, 0, 0, 0.726);
+            cursor: pointer;
+            background-color: rgba(224, 0, 0, 0.662);
+            border: 2px solid rgba(224, 0, 0, 0.185);
+        }
+    
+        #cancelChanges{
+            position:relative;
+            margin-top: 480px;
+            margin-left: 30px;
+            background-color: #CBCBCB;
+            border: 2px solid rgba(0, 0, 0, 0.185);
+            font-size: 17px;
+            
+        }
+        
+    
+        #cancelChanges:hover{
+            box-shadow: 0px 0px 10px rgba(224, 0, 0, 0.726);
+            cursor: pointer;
+            color: #CBCBCB;
+            background-color: rgba(224, 0, 0, 0.662);
+        }
+}
+
+@media (max-width: 736px){
+    body {
+        font-family: 'Arial', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #212121;
+        display: flex;
+    }
+
+    #sidebar {
+        width: 250px;
+        background-color: #131212;
+        padding: 20px;
+        color: white;
+        height: 120.5vw;
+    }
+    
+    #profile-content {
+        display:flex ;
+        justify-content: space-evenly;
+    
+    }
+    
+    #profile-content span{
+       margin-top: 25px;
+       font-size: 18px;
+       text-align: center;
+       color: #bf0404c0;
+       text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+    
+    }
+    
+    
+    #profil {
+        margin-top: 20px;
+        margin-left: 90px;
+        padding: 2px;
+        color: rgba(224, 0, 0, 0.662);
+        text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.50);
+        font-family: Out of my league;
+        font-size: 20px;
+        
+    }
+    
+    
+    
+    #sidebar a {
+        display: block;
+        color: white;
+        padding: 10px;
+        text-decoration: none;
+        transition: background-color 0.3s;
+    }
+    
+    
+    #sidebar:hover{
+        box-shadow: 0px 16px 30px 0px rgba(245, 88, 88, 0.25) inset, 0px 16px 30px 0px rgba(224, 0, 0, 0.45);
+    }
+    
+    
+    #sd:hover {
+        background-color: #555;
+        color: rgba(224, 0, 0, 0.605);
+        cursor: pointer;
+        
+    }
+    #sd
+    {
+        border-bottom: 1px solid #555;
+    }
+    
+    
+    #sidebar a:hover {
+        cursor: pointer;
+    }
+    
+    .sidebar_elements
+    {
+        margin-top: 30px;
+    }
+    
+    
+    
+    
+        .profile_all {
+            display: flex;
+            background-color: #131212;
+            box-shadow: 0px 16px 30px 0px rgba(245, 88, 88, 0.176) inset, 0px 16px 30px 0px rgba(224, 0, 0, 0.185);
+            flex-direction: row;
+            align-items: stretch;
+            align-content: stretch;
+            position: relative;
+            top: 10px;
+            margin-bottom: 10vw;
+            left: 10vw;
+            width: 100vw;
+            height: 80vw;
+            align-items: center;
+    
+        }
+    
+       
+    
+        .profile_text
+        {
+            margin-top: 5px;
+            margin-right: 2px;
+            margin-left: -90px;
+        }
+    
+        .profile_text div{
+            color: var(--silver, #CBCBCB);
+            text-shadow: 0px 0px 10px rgba(224, 0, 0, 0.877) ;
+            margin-top: 5px;
+            margin-left: 50px;
+            line-height: 3;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            width: 250px;
+        }   
+        
+        .profile_txt div{
+            color: var(--silver, #CBCBCB);
+            margin-top: 7px;
+            margin-left: 55px;
+            line-height: 3;
+            font-size: 17px;
+            display: flex;
+            justify-content: center;
+            width: 250px;
+    
+        } 
+         
+        .profile_txt{
+            margin-top: 5px;
+        }
+        
+        
+    
+        .profile_txt div:hover #edit{
+            display:block;
+            margin-left: 220px;
+            margin-top: 1.7px;
+            height: 15px;
+            color: #ffffff; 
+            position: absolute;
+            cursor: pointer;
+        }
+    
+    
+    
+    
+        #edit{
+            display: none;
+        } 
+        
+        
+    
+    
+        .profile_inputs input{
+            width: 180px;
+            height: 32px;
+            background-color: #131212;
+            color: #CBCBCB;
+            font-size: 15px;
+            border-color: rgba(224, 0, 0, 0.185);
+            margin-bottom: 15px;
+            
+        }
+        
+        
+        .profile_inputs select{
+            width: 190px;
+            height: 34px;
+            background-color: #131212;
+            color: #CBCBCB;
+            font-size: 15px;
+            
+            margin-bottom: 15px;
+            border: 2px solid  rgba(224, 0, 0, 0.185);
+            
+        }
+    
+        
+    
+       .view-mode{
+          margin-left: 20px;
+       }
+    
+    
+    
+    
+        
+        .profile_inputs input:hover {
+            display: block;
+    
+        }
+    
+        #saveChanges{
+            position:relative;
+            margin-top: 480px;
+            margin-left: -150px;
+            color: #CBCBCB;
+            background-color: #131212;
+            font-size: 17px;
+            
+        }
+        
+    
+        #saveChanges:hover{
+            box-shadow: 0px 0px 10px rgba(224, 0, 0, 0.726);
+            cursor: pointer;
+            background-color: rgba(224, 0, 0, 0.662);
+            border: 2px solid rgba(224, 0, 0, 0.185);
+        }
+    
+        #cancelChanges{
+            position:relative;
+            margin-top: 480px;
+            margin-left: 30px;
+            background-color: #CBCBCB;
+            border: 2px solid rgba(0, 0, 0, 0.185);
+            font-size: 17px;
+            
+        }
+        
+    
+        #cancelChanges:hover{
+            box-shadow: 0px 0px 10px rgba(224, 0, 0, 0.726);
+            cursor: pointer;
+            color: #CBCBCB;
+            background-color: rgba(224, 0, 0, 0.662);
+        }
+}
